@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <title>Document</title>
+	<meta charset="UTF-8">
+	<title>Document</title>
 </head>
 <body>
+<h1 id="some-id" class="class-h" style="color: red;">Введення в CSS
+</h1>
+h1
+html h1
+html body h1
+body h1
 
+#some-id
+html #some-id
+html body #some-id
+body #some-id
+
+body > h1
+
+.class-h:first-child
+h1.class-h
+
+[style]
+[style="color: red;"]
+[id]
+[id="some-id"]
+
+[class]:firs-child
+[class="class-h"]:first-child
+.class-h[style*=red]
+<h2 class="class-h">Способи додавання CSS на сторінку
+    h1+h2
+
+</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+<p lang="en">Lorem ipsum dolor.</p>
+<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+<ul>
+	<li>Lorem ipsum dolor sit amet.
+    </li>
+    <li><span>
+        html body ul li span
+        body ul li span
+        ul li span
+        html ul li span
+        ul li>span
+        li>span:first-child
+        span:second-child
+    </span></li>
+</ul>
+<ol>
+	<li class="some-class"><span>Lorem ipsum.</span>
+	</li>
+</ol>
 </body>
 </html>
