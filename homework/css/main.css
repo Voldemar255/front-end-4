@@ -1,28 +1,37 @@
-body{
+.content{
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-    font-size: 24px;
+    margin-left: 32px;
+    font-size: 24pt;
     color: #000;
-    margin-right: 32px;
+    font-weight:400;
 }
-ul#menu li{
-    display: inline-block;
-    margin-right: 32px;
+.menu{
     font-size: 14px;
+}
+.menu li{
+    margin-right: 32px;
+    display: inline-block;
+
+}
+.menu span{
+        color: #999;
 }
 p{
     font-size: 15px;
     color: #333;
 }
 .container {
-    width: 810px;
-    height: 460px;
+    width: 812px;
+    height: 453px;
     margin-right: 32px;
     margin-left: 32px;
+    line-height: 26px;
+    font-weight:300;
 }
 a {
     color: #666;
