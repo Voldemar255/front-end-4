@@ -1,0 +1,17 @@
+body {
+    counter-reset: pages; /* ініціалізація лічильника */
+}
+
+p {
+    counter-increment: pages; /* збільшення лічильника */
+}
+
+p::before {
+    content: counter(pages); /* відображення лічильника */
+
+}
+
+p:nth-child(odd)
+{
+    background-color: #cccccc;
+}
