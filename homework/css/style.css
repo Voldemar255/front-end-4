@@ -1,10 +1,10 @@
-body {
-    counter-reset: pages;
+.wrapper {
     width: 920px;
     margin: auto;
+    display: table;
 }
+
 p {
-    counter-increment: pages;
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -13,12 +13,26 @@ p {
     font-weight: 400;
     line-height: 18px;
     color:#282828;
-
 }
 
-p::before {
-    content: counter(pages);
+table{
+    counter-reset: row-num;
 }
-p:nth-child(odd) {
-    background: #cccccc;
+
+tr{
+    counter-increment: row-num;
+}
+.counter {
+    width: 40px;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td:first-child{
+    background-color: yellow;
+}
+
+.counter::before {
+    content: counter(row-num);
 }
