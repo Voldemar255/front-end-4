@@ -8,60 +8,54 @@
     <title>Title</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="header">
-            <div class="info">
-                <div class="phone">(+123)456789</div>
-                <div class="login-menu">
-                    <a href="#">Log in</a>
-                    <span>or</span>
-                    <a href="#">Register</a>
-                </div>
-            </div>
-            <div class="logo">
-                <img src="images/Logo.png" alt="Логотип"/>
-                <form id="search">
-                    <input type="search" placeholder="Search product">
-                    <input type="submit" style="background-image: url(images/search.png);" value="">
-                </form>
-                <div class="menu">
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Living room</a>
-                        </li>
-                        <li>
-                            <a href="#">Office</a>
-                        </li>
-                        <li>
-                            <a href="#">Bedroom</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                    
-                    <div class="bag">
-                        <img src="images/Bag.png" alt="">
-                    </div>
-                    
-                    <div class="contact">
-                        <h2>Contact us</h2>
-                        <div class="home">
-                            <a href="#">Home</a>
-                            <span> / </span>
-                            <a href="#">Contact</a>
-                        </div>
+<div class="wrapper">
+    <header class="header">
 
-                    </div>
+        <div class="info">
+            <div class="container">
+                <a href="tell:+123456789" class="phone">(+123)456789</a>
+                <div class="login-menu">
+                    <a href="#">Log in</a><span>or</span><a href="#">Register</a>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="middle container">
+            <a href="/" class="logo">
+                <img src="images/logo.png" width="166" height="49" alt="logotype">
+            </a>
+            <form action="#" method="get" class="form-search clearfix">
+                <input type="search" placeholder="Search product">
+                <button type="submit">
+                </button>
+            </form>
+        </div>
+
+        <div class="bottom clearfix">
+        <nav class="menu container">
+            <a href="#" class="bag"></a>
+            <ul>
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#">Living room</a>
+                </li>
+                <li>
+                    <a href="#">Office</a>
+                </li>
+                <li>
+                    <a href="#">Bedroom</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+</div>
 </body>
 </html>

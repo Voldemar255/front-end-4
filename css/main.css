@@ -1,103 +1,133 @@
-.wrapper{
-    font-family: 'Montserrat', sans-serif;
-    width: 1170px;
-    font-weight: 400;
-    margin: auto;
+html {
+    font-family: 'Montserrat', sans-serif;}
+body {
+    min-width: 1170px;
 }
-.header {
-    height: 52px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #fff;
-    text-decoration: none;
+input,
+button {
+    outline: none;
 }
-
 .info {
     background-color: #2b2b2b;
-    height: 30px;
 }
 
-.phone {
+.header {
+    background:#232323;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1170px;
+}
+.phone{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #7f7f7f;
+    line-height: 24px;
+    font-weight:200;
+}
+.login-menu {
+    float: right;
     font-size: 14px;
     color: #7f7f7f;
     line-height: 24px;
     font-weight:300;
-    float: left;
-    display: inline-block;
 }
-
-
-.login-menu {
-    display: inline-block;
-    float: right;
-}
-
-.info a {
-    line-height: 26px;
-    font-weight: 300;
-    color: #7f7f7f;
+.login-menu a {
+    color: #666666;
     text-decoration: none;
 }
-.info span {
+.login-menu a:hover {
+    text-decoration: underline;
+}
+.login-menu span {
+    margin: 0 10px;
     color: #353535;
+    font-size: 12px;
 }
-/* header - info - end */
-
-/* header - logo - begin */
-.logo {
-    background-color: #232323 ;
+.phone,
+.login-menu {
+    padding: 5px 0;
 }
-
-#search {
-    width: 275px;
-    height: 45px;
+.clearfix::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+.middle form {
+    display: inline-block;
     float: right;
-    border: 1px solid #7f7f7f;
-
+    border: 1px solid #323232;
+}
+.logo{
+    display: inline-block;
+}
+.logo,
+.middle form {
+    margin: 30px 0 26px;
 }
 
-input[type="search"] {
-    margin-left: 25px;
-    margin-top: 5px;
-    border: none;
+
+.form-search{
     background-color: transparent;
-    outline: none;
-    font-family: Montserrat, sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 24px;
-}
-
-input[type="submit"] {
-    width: 20px;
-    height: 20px;
     border: none;
+}
+.form-search,
+.form-search::placeholder {
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 24px;
+    color: #666666;
+}
+.form-search input{
+    background-color: transparent;
+    border: none;
+}
+.middle button {
+    width: 54px;
+    height: 45px;
+    background: transparent url(../images/search.png) center center no-repeat;
+    border: none;
+    padding: 0;
+}
+.form-search,
+.middle button {
+    display: inline-block;
+    vertical-align: top;
 
 }
-.menu ul {
+.menu{
+    padding-bottom: 30px;
+}
+.menu ul{
+    list-style: none;
     padding: 0;
 }
 .menu li {
     font-weight: 400;
-    display: inline;
-    margin-right: 57px;
+    display: inline-block;
     position: relative;
 }
-
-.menu li a {
+.menu li+li {
+    margin-left: 57px;
+}
+.menu a {
+    padding: 10px;
     color: #ffffff;
+    font-size: 16px;
     text-decoration: none;
     font-weight: 400;
     line-height: 24px;
 }
+.menu .active,
 .menu li a:hover {
     color: #be926f;
 }
-.bag{
-display: inline-block;
-    position: absolute;
+.bag {
+    float: right;
+   background: url("../images/bag.png") center center no-repeat;
 }
-
 .contact {
     height: 120px;
     background-color: #e7e7e7;
@@ -135,5 +165,24 @@ display: inline-block;
     display: inline-block;
     float: right;
     margin-top: 51px;
+}
+.bag{
+    display: inline-block;
+    text-decoration: none;
+}
+.bag::after {
+    display: inline-block;
+    content: '2';
+    color: black;
+    width: 18px;
+    height: 18px;
+    background-color: #be926f;
+    border-radius: 100%;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    top: -8px;
+    right: -8px;
 
 }
