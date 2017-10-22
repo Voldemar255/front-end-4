@@ -91,7 +91,7 @@ button {
         }
 
         .form-search {
-            padding: 10px 4px 10px 20px;
+            padding: 10px 60px 10px 20px;
             background-color: transparent;
         }
 
@@ -149,7 +149,7 @@ button {
 
         @media (min-width: 720px) {
             .menu li {
-                display: block;
+                display: inline-block;
             }
             .menu li + li {
                 margin: 0;
