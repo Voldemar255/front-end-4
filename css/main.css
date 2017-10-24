@@ -1,239 +1,265 @@
 html {
-    font-family: 'Montserrat', sans-serif;}
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     min-width: 320px;
 }
+
 input,
 button {
     outline: none;
 }
+
 .info {
     background-color: #2b2b2b;
     line-height: 24px;
 }
 
 .header {
-    background:#232323;
+    background: #232323;
 }
 
 .container {
     margin: 0 auto;
     max-width: 1170px;
 }
-.phone{
+
+.phone {
     display: inline-block;
     text-decoration: none;
     font-size: 14px;
     color: #7f7f7f;
     line-height: 24px;
-    font-weight:200;
+    font-weight: 200;
 }
+
 .login-menu {
     float: right;
-    font-weight:300;
+    font-weight: 300;
 }
 
-    @media (max-width: 450px) {
-        .phone, .login-menu {
-            display: block;
-            float: none;
-            text-align: center;
-        }
-        .logo {
-            display: inline-block;
-            text-align: center;
-            width: 100%;
-        }
+@media (max-width: 450px) {
+    .phone, .login-menu {
+        display: block;
+        float: none;
+        text-align: center;
     }
 
-        .login-menu a {
-            color: #666666;
-            text-decoration: none;
-            font-size: 14px;
+    .logo {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+}
 
-        }
+.login-menu a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 14px;
 
-        .login-menu a:hover {
-            text-decoration: underline;
-        }
+}
 
-        .login-menu span {
-            margin: 0 10px;
-            color: #353535;
-            font-size: 12px;
-        }
+.login-menu a:hover {
+    text-decoration: underline;
+}
 
-        .phone,
-        .login-menu {
-            padding: 5px 0;
-        }
+.login-menu span {
+    margin: 0 10px;
+    color: #353535;
+    font-size: 12px;
+}
 
-        .clearfix::after {
-            display: table;
-            clear: both;
-            content: '';
-        }
+.phone,
+.login-menu {
+    padding: 5px 0;
+}
 
-        .middle form {
-            display: inline-block;
-            float: right;
-            border: 1px solid #323232;
-        }
+.clearfix::after {
+    display: table;
+    clear: both;
+    content: '';
+}
 
-        .logo {
-            display: inline-block;
-        }
+.middle form {
+    display: inline-block;
+    float: right;
+    border: 1px solid #323232;
+}
 
-        .logo,
-        .middle form {
-            margin: 30px 0 26px;
-        }
+.logo {
+    display: inline-block;
+}
 
+.logo,
+.middle form {
+    margin: 30px 0 26px;
+}
 
-        .form-search,
-        .form-search::placeholder {
-            font-size: 13px;
-            font-weight: 200;
-            line-height: 24px;
-            color: #666;
-        }
+.form-search,
+.form-search::placeholder {
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 24px;
+    color: #666;
+}
 
-        .form-search input {
-            background-color: transparent;
-            border: none;
-            color: #666;
-            text-align: center;
-            vertical-align: middle;
-            margin-top: 15px;
-            width: 200px;
-        }
+.form-search input {
+    background-color: transparent;
+    border: none;
+    color: #666;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 15px;
+    width: 200px;
+}
 
-        .middle button {
-            width: 54px;
-            height: 45px;
-            background: transparent url(../images/search.png) center center no-repeat;
-            border: none;
-            padding: 0;
-        }
+.middle button {
+    width: 54px;
+    height: 45px;
+    background: transparent url(../images/search.png) center center no-repeat;
+    border: none;
+    padding: 0;
+}
+
 @media (max-width: 450px) {
     .middle form {
         position: relative;
         float: none;
+        width: 80%;
+        margin-left: 30px;
+        height: 45px;
     }
-    .form-search {
-        width:100%;
-    }
-    .middle button{
+
+    .middle button {
         position: absolute;
         top: 0;
         right: 0;
     }
+
+    .phone,
+    .login-menu {
+        padding: 0;
+    }
+
+    .bag,
+    .menu {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 
-        .form-search,
-        .middle button {
-            display: inline-block;
-            vertical-align: top;
+.form-search,
+.middle button {
+    display: inline-block;
+    vertical-align: top;
 
-        }
+}
 
-        .menu {
-            padding-bottom: 30px;
-        }
+.menu {
+    padding-bottom: 30px;
+    display: inline-block;
+}
 
-        .menu ul {
-            list-style: none;
-            padding: 0;
-            margin-left: -20px;
-        }
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin-left: -20px;
+}
 
-        @media (min-width: 720px) {
-            .menu li {
-                display: inline-block;
-            }
-            .menu li + li {
-                margin: 0;
-            }
-        }
+@media (min-width: 720px) {
+    .menu li {
+        display: inline-block;
+    }
 
-        .menu a {
-            display: inline-block;
-            padding: 10px 20px;
-            color: #ffffff;
-            font-size: 16px;
-            text-decoration: none;
-            font-weight: 400;
-            line-height: 24px;
-        }
+    .menu li + li {
+        margin: 0;
+    }
 
-        .menu .active,
-        .menu a:hover {
-            color: #be926f;
-        }
+    .phone,
+    .login-menu {
+        padding: 0;
+    }
+}
 
-        .bag {
-            width: 17px;
-            height: 22px;
-            float: right;
-            background: url("../images/bag.png") center center no-repeat;
-            padding: 10px;
-        }
+.menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 24px;
+}
 
-        .bag::after {
-            display: inline-block;
-            content: '2';
-            color: black;
-            width: 18px;
-            height: 18px;
-            background-color: #be926f;
-            border-radius: 100%;
-            line-height: 18px;
-            text-align: center;
-            font-size: 12px;
-            position: relative;
-            top: -9px;
-            right: -9px;
-        }
+.menu .active,
+.menu a:hover {
+    color: #be926f;
+}
 
-        .contact {
-            background-color: #e7e7e7;
-            border: none;
-            margin-top: 30px;
+.bag {
+    width: 17px;
+    height: 22px;
+    float: right;
+    background: url("../images/bag.png") center center no-repeat;
+    padding: 10px;
+}
 
-        }
+.bag::after {
+    display: inline-block;
+    content: '2';
+    color: black;
+    width: 18px;
+    height: 18px;
+    background-color: #be926f;
+    border-radius: 100%;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    top: -9px;
+    right: -9px;
+}
 
-        .contact h2 {
-            font-family: 'Montserrat', sans-serif;
-            color: #232323;
-            text-transform: uppercase;
-            font-size: 30px;
-            font-weight: 400;
-            line-height: 26px;
-            margin: 50px 28px;
-            display: inline-block;
-        }
+.contact {
+    background-color: #e7e7e7;
+    border: none;
+    margin-top: 30px;
 
-        .home span {
-            color: #999999;
-        }
+}
 
-        .home a {
-            font-size: 14px;
-            line-height: 24px;
-            font-weight: 400;
-            font-family: 'Montserrat', sans-serif;
-            color: #999999;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
+.contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #232323;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 50px 28px;
+    display: inline-block;
+}
 
-        .home a:last-child {
-            color: #666666;
-            margin-right: 17px;
-        }
+.home span {
+    color: #999999;
+}
 
-        .home {
-            display: inline-block;
-            float: right;
-            margin-top: 55px;
-        }
+.home a {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #999999;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.home a:last-child {
+    color: #666666;
+    margin-right: 17px;
+}
+
+.home {
+    display: inline-block;
+    float: right;
+    margin-top: 55px;
+}
