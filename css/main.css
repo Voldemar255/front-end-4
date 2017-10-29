@@ -31,7 +31,7 @@ button {
 }
 .login-menu {
     font-weight:300;
-    font-size: .875rem;
+    font-size: 1.1428rem;;
     line-height: 1.85;
 }
 
@@ -65,7 +65,7 @@ button {
         .login-menu a {
             color: #666666;
             text-decoration: none;
-            font-size: .875rem;
+            font-size: 1.1428rem;
             line-height: 1.85;
 
         }
