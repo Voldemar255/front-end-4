@@ -33,26 +33,39 @@ button {
     font-weight:300;
 }
 
-    /*@media (max-width: 450px) {
-        .phone, .login-menu {
-            display: block;
-            float: none;
-            text-align: center;
+    @media (max-width: 657px) {
+        .middle {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            flex-direction: column;
         }
         .logo {
-            display: inline-block;
-            text-align: center;
-            width: 100%;
+            display: block;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
         }
-    }*/
+        .middle form {
+            flex-direction: column;
+            display: block;
 
+        }
+        .menu ul {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        }
+        .bag {
+            display: flex;
+        }
+    }
         .login-menu a {
             color: #666666;
             text-decoration: none;
             font-size: 14px;
 
         }
-
         .login-menu a:hover {
             text-decoration: underline;
         }
