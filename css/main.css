@@ -23,9 +23,9 @@ button {
 .phone{
     display: inline-block;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1.1428rem;
     color: #7f7f7f;
-    line-height: 24px;
+    line-height: 1.85;
     font-weight:200;
 }
 .login-menu {
@@ -49,8 +49,8 @@ button {
         .login-menu a {
             color: #666666;
             text-decoration: none;
-            font-size: 14px;
-
+            font-size: 1.1428rem;
+            line-height: 1.85;
         }
 
         .login-menu a:hover {
@@ -60,7 +60,7 @@ button {
         .login-menu span {
             margin: 0 10px;
             color: #353535;
-            font-size: 12px;
+            font-size: .75rem;
         }
 
         .phone,
@@ -92,9 +92,9 @@ button {
 
         .form-search,
         .form-search::placeholder {
-            font-size: 13px;
+            font-size: .8125rem;
             font-weight: 200;
-            line-height: 24px;
+            line-height: 1.85;
             color: #666;
         }
 
@@ -208,7 +208,7 @@ button {
             text-transform: uppercase;
             font-size: 30px;
             font-weight: 400;
-            line-height: 26px;
+            line-height: 1.625;
             margin: 50px 28px;
             display: inline-block;
         }
