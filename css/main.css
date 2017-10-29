@@ -13,7 +13,6 @@ button {
 
 .info {
     background-color: #2b2b2b;
-    line-height: 24px;
 }
 
 .header {
@@ -28,15 +27,16 @@ button {
 .phone {
     display: inline-block;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1.1428rem;
     color: #7f7f7f;
-    line-height: 24px;
+    line-height: 1.85;
     font-weight: 200;
 }
 
 .login-menu {
     float: right;
     font-weight: 300;
+    font-size: .75rem;
 }
 
 @media (max-width: 450px) {
@@ -56,7 +56,7 @@ button {
 .login-menu a {
     color: #666666;
     text-decoration: none;
-    font-size: 14px;
+    font-size: .75rem;
 
 }
 
@@ -98,9 +98,9 @@ button {
 
 .form-search,
 .form-search::placeholder {
-    font-size: 13px;
+    font-size: .8125rem;
     font-weight: 200;
-    line-height: 24px;
+    line-height: 1.85;
     color: #666;
 }
 
@@ -186,10 +186,10 @@ button {
     display: inline-block;
     padding: 10px 20px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
 }
 
 .menu .active,
