@@ -123,6 +123,7 @@ header {
     float: right;
     background: url("../images/bag.png") center center no-repeat;
     padding: 10px;
+    display: inline-block;
 }
 
 .bag::after {
