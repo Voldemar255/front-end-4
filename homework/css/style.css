@@ -8,7 +8,7 @@ p {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: Arial, Sans-Serif;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -30,9 +30,15 @@ tr{
 }
 
 td:first-child{
-    background-color: yellow;
+    background-color: #cc4242;
 }
 
 .counter::before {
     content: counter(row-num);
+}
+li:nth-child(2n-1) {
+    background-color: #cc4242;
+}
+li:nth-child(2n) {
+    background-color: #cc4242;
 }
