@@ -1,26 +1,45 @@
 .wrapper {
+    background-color: #555555;
+    padding: 10px;
+}
+.container {
     width: 920px;
-    margin: auto;
-    display: table;
+    margin: 0 auto;
+
 }
 
-p {
+ul {
+    counter-reset: counter;
+    list-style: none;
+    padding: 0;
     margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
-    font-size: 14px;
-    font-weight: 400;
+}
+
+li {
+    counter-increment: counter;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     line-height: 18px;
-    color:#282828;
+    font-size: 14px;
+    padding: 10px 0 10px 55px;
+    margin: 0 auto;
+    position:relative;
+    background-color: white;
 }
-
-table{
-    counter-reset: row-num;
-}
-
-tr{
-    counter-increment: row-num;
+li:before {
+    content: counter(counter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 300;
+    position: absolute;
+    width: 50px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    color: #fff;
 }
 .counter {
     width: 40px;
@@ -29,16 +48,12 @@ tr{
     vertical-align: middle;
 }
 
-td:first-child{
+li:nth-child(2n-1):before {
     background-color: #cc4242;
 }
-
-.counter::before {
-    content: counter(row-num);
+li:nth-child(2n):before {
+    background-color: #ff5353;
 }
 li:nth-child(2n-1) {
-    background-color: #cc4242;
-}
-li:nth-child(2n) {
-    background-color: #cc4242;
+    background-color: #ccc;
 }
