@@ -43,9 +43,10 @@ button {
             flex-direction: column;
         }
         .logo {
-            display: block;
+            display: inline-flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             margin: 0 auto;
         }
         .middle form {
