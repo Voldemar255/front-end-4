@@ -63,6 +63,7 @@ header {
     font-weight: 200;
     line-height: 24px;
     color: #666;
+    padding-bottom: 5px;
 }
 
 .form-search input {
@@ -136,8 +137,8 @@ header {
     text-align: center;
     font-size: 12px;
     position: relative;
-    top: -9px;
-    right: -9px;
+    top: -17px;
+    right: -6px;
 }
 
 .contact {
