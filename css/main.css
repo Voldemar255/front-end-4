@@ -27,16 +27,17 @@ button {
 .phone {
     display: inline-block;
     text-decoration: none;
-    font-size: 1.1428rem;
+    font-size: .875rem;
     color: #7f7f7f;
     line-height: 1.85;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .login-menu {
     float: right;
+    font-size: .875rem;
+    line-height: 1.85;
     font-weight: 300;
-    font-size: .75rem;
 }
 
 @media (max-width: 450px) {
@@ -108,7 +109,7 @@ button {
     background-color: transparent;
     border: none;
     color: #666;
-    text-align: center;
+    margin-left: 15px;
     vertical-align: middle;
     margin-top: 15px;
     width: 200px;
