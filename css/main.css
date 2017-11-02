@@ -9,7 +9,6 @@ button {
 }
 .info {
     background-color: #2b2b2b;
-    line-height: 24px;
 }
 
 .header {
@@ -22,35 +21,21 @@ button {
 }
 .phone{
     display: inline-block;
-    text-decoration: none;
-    font-size: 1.1428rem;
-    color: #7f7f7f;
+    text-decoration:none;
+    font-size: .875rem;
     line-height: 1.85;
-    font-weight:200;
+    color: #7f7f7f;
+    font-weight:300;
 }
 .login-menu {
     float: right;
-    font-weight:300;
 }
-
-    @media (max-width: 450px) {
-        .phone, .login-menu {
-            display: block;
-            float: none;
-            text-align: center;
-        }
-        .logo {
-            display: inline-block;
-            text-align: center;
-            width: 100%;
-        }
-    }
-
         .login-menu a {
             color: #666666;
             text-decoration: none;
-            font-size: 1.1428rem;
+            font-size: .875rem;
             line-height: 1.85;
+            font-weight:300;
         }
 
         .login-menu a:hover {
@@ -102,7 +87,7 @@ button {
             background-color: transparent;
             border: none;
             color: #666;
-            text-align: center;
+            margin-left: 28px;
             vertical-align: middle;
             margin-top: 15px;
             width: 200px;
