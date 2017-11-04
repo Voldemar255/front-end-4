@@ -233,7 +233,7 @@ header {
     }
 
     .menu li {
-        display: block;
+        display: inline-block;
         text-align: left;
         margin-bottom: 5px;
     }
@@ -265,8 +265,11 @@ header {
         text-align: left;
         margin: 0;
     }
+    .menu {
+        display: inline-block;
+    }
     .menu li {
-        display: inline;
+        display: inline-block;
         margin-bottom: 5px;
         text-align: center;
     }
