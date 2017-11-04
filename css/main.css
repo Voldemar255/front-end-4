@@ -1,6 +1,14 @@
 html {
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
 }
+
+/*TODO: delete test container*/
+.container{
+    border: 1px solid red;
+
+}
+
 input,
 button {
     outline: none;
@@ -35,20 +43,24 @@ header {
 .login-menu a:hover {
     text-decoration: underline;
 }
-
 .login-menu span {
-    margin: 0 10px;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
     color: #353535;
-    font-size: 12px;
+    font-size: .75rem;
 }
 
 .phone,
 .login-menu {
-    padding: 5px 0;
+    padding-top: 5px;
+    padding-right: 0;
+    padding-bottom: 5px;
+    padding-left: 0;
 }
 
 .middle form {
-    float: right;
     border: 1px solid #323232;
 }
 
@@ -59,7 +71,7 @@ header {
 
 .form-search,
 .form-search::placeholder {
-    font-size: 13px;
+    font-size: .8125rem;
     font-weight: 200;
     line-height: 24px;
     color: #666;
@@ -105,7 +117,7 @@ header {
 .menu a {
     padding: 10px 20px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     font-weight: 300;
     line-height: 24px;
@@ -135,7 +147,7 @@ header {
     border-radius: 100%;
     line-height: 18px;
     text-align: center;
-    font-size: 12px;
+    font-size: .75rem;
     position: relative;
     top: -17px;
     right: -6px;
@@ -146,13 +158,11 @@ header {
     border: none;
     margin-top: 30px;
 
-}
-
 .contact h2 {
     font-family: 'Montserrat', sans-serif;
     color: #232323;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 400;
     line-height: 26px;
     margin: 50px 28px;
@@ -164,7 +174,7 @@ header {
 }
 
 .home a {
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 24px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
@@ -202,9 +212,6 @@ header {
         width: 100%;
     }
 
-    .middle button {
-        float:right;
-    }
     .menu li {
         display: block;
         text-align: left;
@@ -226,4 +233,10 @@ header {
         margin-left:0;
         margin-bottom:10px;
     }
+}
+
+@media (max-width: 320px) {
+     button {
+
+     }
 }
