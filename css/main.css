@@ -73,7 +73,7 @@ header {
 .form-search::placeholder {
     font-size: .8125rem;
     font-weight: 200;
-    line-height: 24px;
+    line-height: 1.85;
     color: #666;
     padding-bottom: 5px;
 }
@@ -120,7 +120,7 @@ header {
     font-size: 1rem;
     text-decoration: none;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 1.5;
 }
 
 .menu .active,
@@ -145,7 +145,7 @@ header {
     height: 18px;
     background-color: #be926f;
     border-radius: 100%;
-    line-height: 18px;
+    line-height: 2;
     text-align: center;
     font-size: .75rem;
     position: relative;
@@ -164,7 +164,7 @@ header {
     text-transform: uppercase;
     font-size: 1.875rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: .8;
     margin: 50px 28px;
     /*display: inline-block;*/
 }
@@ -175,7 +175,7 @@ header {
 
 .home a {
     font-size: .875rem;
-    line-height: 24px;
+    line-height: 1.7;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     color: #999999;
