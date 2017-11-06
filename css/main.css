@@ -1,12 +1,14 @@
 html {
-    font-family: 'Montserrat', sans-serif;}
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
 input,
 button {
     outline: none;
 }
 .info {
     background-color: #2b2b2b;
-    line-height: 24px;
 
 }
 
@@ -18,27 +20,40 @@ button {
     margin: 0 auto;
     max-width: 1170px;
 }
-.top-flex {
+.top-flex  {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .phone{
     text-decoration: none;
-    font-size: 1.1428rem;
+    font-size: .875rem;
     color: #7f7f7f;
     line-height: 1.85;
     font-weight:200;
 }
-.login-menu {
-    font-weight:300;
-    font-size: 1.1428rem;;
+.login-menu a {
+    font-weight: 300;
+    font-size: .875rem;;
     line-height: 1.85;
+    color: #666666;
+    text-decoration: none;
+}
+.login-menu a:hover {
+    text-decoration: underline;
+}
+
+.login-menu span {
+    margin: 0 10px;
+    color: #353535;
+    font-size: .75rem;
 }
 
     @media (max-width: 657px) {
         .middle {
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
             flex-wrap: wrap;
             flex-direction: column;
         }
@@ -63,22 +78,6 @@ button {
             display: flex;
         }
     }
-        .login-menu a {
-            color: #666666;
-            text-decoration: none;
-            font-size: 1.1428rem;
-            line-height: 1.85;
-
-        }
-        .login-menu a:hover {
-            text-decoration: underline;
-        }
-
-        .login-menu span {
-            margin: 0 10px;
-            color: #353535;
-            font-size: .75rem;
-        }
 
         .phone,
         .login-menu {
@@ -128,26 +127,11 @@ button {
             border: none;
             padding: 0;
         }
-/*@media (max-width: 450px) {
-    .middle form {
-        position: relative;
-        float: none;
-    }
-    .form-search {
-        width:100%;
-    }
-    .middle button{
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-}*/
 
         .form-search,
         .middle button {
             display: inline-block;
             vertical-align: top;
-
         }
 
         .menu {
@@ -160,14 +144,6 @@ button {
             margin-left: -20px;
         }
 
-        /*@media (min-width: 720px) {
-            .menu li {
-                display: inline-block;
-            }
-            .menu li + li {
-                margin: 0;
-            }
-        }*/
         .bottom {
             display: flex;
             justify-content: space-between;
@@ -219,16 +195,15 @@ button {
             background-color: #e7e7e7;
             border: none;
             margin-top: 30px;
-
         }
 
         .contact h2 {
             font-family: 'Montserrat', sans-serif;
             color: #232323;
             text-transform: uppercase;
-            font-size: 30px;
+            font-size: 1.875rem;
             font-weight: 400;
-            line-height: 26px;
+            line-height: .8;
             margin: 50px 28px;
             display: inline-block;
         }
@@ -238,8 +213,8 @@ button {
         }
 
         .home a {
-            font-size: 14px;
-            line-height: 24px;
+            font-size: .875rem;
+            line-height: 1.7;
             font-weight: 400;
             font-family: 'Montserrat', sans-serif;
             color: #999999;
@@ -255,4 +230,19 @@ button {
         .home {
             display: inline-block;
             margin-top: 55px;
+        }
+
+        @media (max-width: 320px) {
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .top-flex {
+                display: flex;
+            }
+            .login-menu {
+                display: flex;
+                flex-wrap: wrap;
+            }
         }
