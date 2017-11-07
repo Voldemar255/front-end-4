@@ -3,11 +3,6 @@ html {
     font-size: 16px;
 }
 
-/*TODO: delete test container*/
-.container {
-    border: 1px solid red;
-}
-
 [class*="col-"] {
     padding-left: 0;
     padding-right: 0;
