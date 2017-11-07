@@ -7,32 +7,36 @@ input,
 button {
     outline: none;
 }
+
 .info {
     background-color: #2b2b2b;
 
 }
 
 .header {
-    background:#232323;
+    background: #232323;
 }
 
 .container {
     margin: 0 auto;
     max-width: 1170px;
 }
-.top-flex  {
+
+.top-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.phone{
+
+.phone {
     text-decoration: none;
     font-size: .875rem;
     color: #7f7f7f;
     line-height: 1.85;
-    font-weight:200;
+    font-weight: 200;
 }
+
 .login-menu a {
     font-weight: 300;
     font-size: .875rem;;
@@ -40,6 +44,7 @@ button {
     color: #666666;
     text-decoration: none;
 }
+
 .login-menu a:hover {
     text-decoration: underline;
 }
@@ -50,199 +55,177 @@ button {
     font-size: .75rem;
 }
 
-    @media (max-width: 657px) {
-        .middle {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            flex-direction: column;
-        }
-        .logo {
-            display: inline-flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-        }
-        .middle form {
-            flex-direction: column;
-            display: block;
+.middle {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 
-        }
-        .menu ul {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-        }
-        .bag {
-            display: flex;
-        }
+.logo {
+    margin: 0 auto;
+}
+
+.phone,
+.login-menu {
+    padding: 5px 0;
+}
+
+.middle form {
+    border: 1px solid #323232;
+}
+
+.logo,
+.middle form {
+    margin: 30px 0 26px;
+}
+
+.form-search,
+.form-search::placeholder {
+    font-size: .8125rem;
+    font-weight: 300;
+    line-height: 1.85;
+    color: #666;
+}
+
+.form-search input {
+    display: inline-flex;
+    background-color: transparent;
+    border: none;
+    color: #666;
+    text-align: left;
+    width: 200px;
+    padding-left: 15px;
+}
+
+.middle button {
+    width: 54px;
+    height: 45px;
+    background: transparent url(../images/search.png) center center no-repeat;
+    border: none;
+    padding: 0;
+}
+
+.menu {
+    padding-bottom: 30px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin-left: -20px;
+}
+.menu li {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.menu .active,
+.menu a:hover {
+    color: #be926f;
+}
+
+.bag {
+    width: 17px;
+    height: 22px;
+    background: url("../images/bag.png") center center no-repeat;
+    padding: 10px;
+}
+
+.bag::after {
+    display: inline-block;
+    content: '2';
+    color: black;
+    width: 18px;
+    height: 18px;
+    background-color: #be926f;
+    border-radius: 100%;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    top: -9px;
+    right: -9px;
+}
+
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    background-color: #e7e7e7;
+    border: none;
+    margin-top: 30px;
+}
+
+.contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #232323;
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: .8;
+    margin: 50px 28px;
+    display: inline-block;
+}
+
+.home span {
+    color: #999999;
+}
+
+.home a {
+    font-size: .875rem;
+    line-height: 1.7;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #999999;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.home a:last-child {
+    color: #666666;
+    margin-right: 17px;
+}
+
+.home {
+    display: inline-block;
+    margin-top: 55px;
+}
+@media (max-width: 320px) {
+    .top-flex {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .bottom, {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
-        .phone,
-        .login-menu {
-            padding: 5px 0;
-        }
-        .middle {
-            display:flex;
-            justify-content: space-between;
-        }
-        .middle form {
-            border: 1px solid #323232;
-        }
-
-        .logo {
-            display: inline-block;
-        }
-
-        .logo,
-        .middle form {
-            margin: 30px 0 26px;
-        }
-
-
-        .form-search,
-        .form-search::placeholder {
-            font-size: .8125rem;
-            font-weight: 300;
-            line-height: 1.85;
-            color: #666;
-        }
-
-        .form-search input {
-            background-color: transparent;
-            border: none;
-            color: #666;
-            text-align:left;
-            vertical-align: middle;
-            margin-top: 15px;
-            width: 200px;
-            padding-left: 15px;
-        }
-
-        .middle button {
-            width: 54px;
-            height: 45px;
-            background: transparent url(../images/search.png) center center no-repeat;
-            border: none;
-            padding: 0;
-        }
-
-        .form-search,
-        .middle button {
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .menu {
-            padding-bottom: 30px;
-        }
-
-        .menu ul {
-            list-style: none;
-            padding: 0;
-            margin-left: -20px;
-        }
-
-        .bottom {
-            display: flex;
-            justify-content: space-between;
-        }
-        .menu li {
-            display: inline-block;
-        }
-        .menu a {
-            padding: 10px 20px;
-            color: #ffffff;
-            font-size: 1rem;
-            text-decoration: none;
-            font-weight: 400;
-            line-height: 1.5;
-        }
-
-        .menu .active,
-        .menu a:hover {
-            color: #be926f;
-        }
-
-        .bag {
-            width: 17px;
-            height: 22px;
-            background: url("../images/bag.png") center center no-repeat;
-            padding: 10px;
-        }
-
-        .bag::after {
-            display: inline-block;
-            content: '2';
-            color: black;
-            width: 18px;
-            height: 18px;
-            background-color: #be926f;
-            border-radius: 100%;
-            line-height: 18px;
-            text-align: center;
-            font-size: 12px;
-            position: relative;
-            top: -9px;
-            right: -9px;
-        }
-        .contact-flex {
-            display: flex;
-            justify-content: space-between;
-        }
-        .contact {
-            background-color: #e7e7e7;
-            border: none;
-            margin-top: 30px;
-        }
-
-        .contact h2 {
-            font-family: 'Montserrat', sans-serif;
-            color: #232323;
-            text-transform: uppercase;
-            font-size: 1.875rem;
-            font-weight: 400;
-            line-height: .8;
-            margin: 50px 28px;
-            display: inline-block;
-        }
-
-        .home span {
-            color: #999999;
-        }
-
-        .home a {
-            font-size: .875rem;
-            line-height: 1.7;
-            font-weight: 400;
-            font-family: 'Montserrat', sans-serif;
-            color: #999999;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .home a:last-child {
-            color: #666666;
-            margin-right: 17px;
-        }
-
-        .home {
-            display: inline-block;
-            margin-top: 55px;
-        }
-
-        @media (max-width: 320px) {
-            .info {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-            .top-flex {
-                display: flex;
-            }
-            .login-menu {
-                display: flex;
-                flex-wrap: wrap;
-            }
-        }
+    .middle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-search {
+        margin: 5px;
+    }
+}
