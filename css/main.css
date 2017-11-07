@@ -241,7 +241,6 @@ header {
     .menu ul {
         float: left;
     }
-
     .bag {
         margin-right: 15px;
     }
@@ -258,7 +257,7 @@ header {
     }
     .middle form {
         float: none;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
     .home {
@@ -266,16 +265,22 @@ header {
         margin: 0;
     }
     .menu {
-        display: inline-block;
+        display: block;
+        padding: 0;
     }
     .menu li {
-        display: inline-block;
+        display: block;
         margin-bottom: 5px;
-        text-align: center;
+        text-align: left;
+    }
+    button {
+        display: block;
     }
 
     .bag {
         margin-right: 15px;
+        margin-top: 20px;
+
     }
     .contact h2 {
         margin-top: 20px;
