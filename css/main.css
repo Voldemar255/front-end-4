@@ -89,7 +89,7 @@ button {
 }
 
 .form-search input {
-    display: inline-flex;
+    vertical-align: middle;
     background-color: transparent;
     border: none;
     color: #666;
@@ -207,25 +207,39 @@ button {
     display: inline-block;
     margin-top: 55px;
 }
-@media (max-width: 320px) {
+@media (max-width: 425px) {
     .top-flex {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
     }
-    .bottom, {
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
+    .phone,
+    .login-menu {
+        padding: 0;
     }
-
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .logo, .middle form {
+        margin: 15px 0 15px;
+    }
+    .menu li {
+        padding-bottom: 0;
+    }
     .middle {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .form-search {
-        margin: 5px;
+    .contact-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home, .contact h2 {
+        margin: 10px  auto;
     }
 }
