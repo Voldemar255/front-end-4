@@ -89,7 +89,6 @@ button {
 }
 
 .form-search input {
-    vertical-align: middle;
     background-color: transparent;
     border: none;
     color: #666;
@@ -99,16 +98,19 @@ button {
 }
 
 .middle button {
-    width: 54px;
-    height: 45px;
+    width: 56px;
+    height: 46px;
     background: transparent url(../images/search.png) center center no-repeat;
     border: none;
     padding: 0;
 }
-
-.menu {
-    padding-bottom: 30px;
+.form-search, .middle button {
+    display: inline-block;
+    vertical-align: middle;
 }
+/*.menu {*/
+    /*padding-bottom: 30px;*/
+/*}*/
 
 .menu ul {
     list-style: none;
@@ -119,7 +121,9 @@ button {
     display: inline-flex;
     flex-direction: row;
 }
-
+.menu li + li {
+    margin-bottom: 20px;
+}
 .bottom {
     display: flex;
     justify-content: space-between;
@@ -147,11 +151,12 @@ button {
 }
 
 .bag::after {
-    display: inline-block;
+    display: block;
     content: '2';
     color: black;
     width: 18px;
     height: 18px;
+    text-decoration: none;
     background-color: #be926f;
     border-radius: 100%;
     line-height: 18px;
@@ -217,22 +222,27 @@ button {
     .login-menu {
         padding: 0;
     }
-    .bottom {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
+
     .logo, .middle form {
         margin: 15px 0 15px;
     }
     .menu li {
+        display: block;
         padding-bottom: 0;
     }
     .middle {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .bag {
+        align-self: flex-end;
     }
     .contact-flex {
         display: flex;
