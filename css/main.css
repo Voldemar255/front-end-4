@@ -42,7 +42,6 @@ button {
     line-height: 1.85;
     color: #666666;
     text-decoration: none;
-    padding-right: 15px;
 }
 
 .login-menu a:hover {
@@ -82,9 +81,9 @@ button {
 
 .form-search,
 .form-search::placeholder {
-    font-size: .8125rem;
+    font-size: 13px;
     font-weight: 300;
-    line-height: 1.85;
+    line-height: 24px;
     color: #666;
 }
 
@@ -98,8 +97,8 @@ button {
 }
 
 .middle button {
-    width: 56px;
-    height: 46px;
+    width: 54px;
+    height: 44px;
     background: transparent url(../images/search.png) center center no-repeat;
     border: none;
     padding: 0;
@@ -143,6 +142,7 @@ button {
     height: 22px;
     background: url("../images/bag.png") center center no-repeat;
     padding: 10px;
+    text-decoration: none;
 }
 
 .bag::after {
@@ -151,7 +151,6 @@ button {
     color: black;
     width: 18px;
     height: 18px;
-    text-decoration: none;
     background-color: #be926f;
     border-radius: 100%;
     line-height: 18px;
@@ -221,27 +220,34 @@ button {
     .logo, .middle form {
         margin: 15px 0 15px;
     }
+
     .menu li {
         display: block;
         padding-bottom: 0;
+        margin-bottom: 25px;
     }
-    .menu li + li {
-        margin-bottom: 20px;
+
+    .menu ul {
+        margin-left: 10px;
+        width: 100%;
     }
 
     .middle {
         display: flex;
         flex-direction: column;
         align-items: center;
+        align-content: space-around;
     }
     .bottom {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
     }
     .bag {
-        align-self: flex-end;
+        align-self: flex-start;
+        margin-left: 85%;
+        position: absolute;
     }
     .contact-flex {
         display: flex;
