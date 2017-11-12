@@ -1,12 +1,32 @@
+
+/*Функція знаходження середнього арифметичного*/
 function Sered(a, b) {
-    s=(a + b)/2;
-    console.log('Середнє арифметичне двох чисел=',s);
+    var s = ( a + b )/2;
+    return s;
 }
+
+
+/*Функція знаходження меншого числа*/
 
 function Minimal(a, b) {
     if (a < b) {
-        console.log('Менше число=', a);
+        return a;
     }
-    else
-        console.log('Менше число=', b);
+    if (a > b){
+        return  b;
+    }
+    else {
+        return "Введені числа тотожні!"
+    }
+}
+
+
+/* Функція піднесення до n-го степеня*/
+
+function pow(a, n) {
+    var b = a;
+    for (var i = 1; i < n; i++) {
+        b *= a;
+    }
+    return b;
 }
