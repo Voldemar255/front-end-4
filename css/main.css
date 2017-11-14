@@ -3,11 +3,6 @@ html {
     font-size: 16px;
 }
 
-[class*="col-"] {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 input,
 button {
     outline: none;
@@ -61,6 +56,7 @@ header {
 .middle form {
     border: 1px solid #323232;
     width: 273px;
+    height: 45px;
     float: right;
 }
 
@@ -148,7 +144,7 @@ header {
     height: 18px;
     background-color: #be926f;
     border-radius: 100%;
-    line-height: 2;
+    line-height: 18px;
     text-align: center;
     font-size: .75rem;
     position: relative;
@@ -217,7 +213,6 @@ header {
         float: right;
         width: 80%;
         margin: 0 auto;
-
     }
 
     .logo {
