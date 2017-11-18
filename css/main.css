@@ -2,7 +2,9 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
-
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 input,
 button {
     outline: none;
@@ -34,6 +36,10 @@ header {
     font-size: .875rem;
     line-height: 1.85;
     font-weight: 300;
+}
+.info a:hover {
+    color: #8c8c8c;
+    text-decoration: none;
 }
 
 .login-menu a:hover {
@@ -79,9 +85,10 @@ header {
     border: none;
     color: #666;
     vertical-align: middle;
-    margin-top: 10px;
-    margin-left: 15px;
+    padding: 9px 0 8px 20px;
+    font-family: 'Montserrat', sans-serif;
     width: 200px;
+    box-sizing: border-box;
 }
 
 .middle button {
@@ -256,11 +263,11 @@ header {
     }
     .menu {
         display: block;
-        padding: 0;
+        padding: 15px;
     }
     .menu li {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
         text-align: left;
     }
     button {
