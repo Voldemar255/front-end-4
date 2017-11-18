@@ -2,6 +2,9 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
 input,
 button {
@@ -91,12 +94,14 @@ button {
 }
 
 .form-search input {
+    font-family: 'Montserrat', sans-serif;
     background-color: transparent;
     border: none;
     color: #666;
     text-align: left;
     width: 200px;
-    padding-left: 15px;
+    padding: 9px 0 8px 20px;
+    box-sizing: border-box;
 }
 
 .middle button {
@@ -209,7 +214,7 @@ button {
     display: inline-block;
     margin-top: 55px;
 }
-@media (max-width: 425px) {
+@media (max-width: 678px) {
     .container{
         padding-left: 15px;
         padding-right: 15px;
@@ -228,6 +233,7 @@ button {
         margin: 15px 0 15px;
         height: 44px;
     }
+    
     .menu li {
         display: block;
         padding-bottom: 0;
