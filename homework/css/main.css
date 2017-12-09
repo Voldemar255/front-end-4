@@ -118,11 +118,15 @@ border-bottom: 3px solid #18cfab;
 button.explore {
     background: #18cfab;
     margin-right: 15px;
+    border: none;
+    border-radius: 4px;
 }
 
 button.purchase {
     background: #00cbf6;
     margin-left: 15px;
+    border: none;
+    border-radius: 4px;
 }
 
 button.explore,
@@ -159,6 +163,15 @@ button.purchase a {
     align-items: center;
     flex-wrap: wrap;
 }
+.theme,
+.support {
+    border-top: 8px solid #18cfab;
+}
+.custom,
+.responsive {
+    border-top: 8px solid #ffffff;
+}
+
 .working a {
     font-size: 20px;
     line-height: 31.83px;
@@ -217,7 +230,9 @@ button.purchase a {
 .features span:before,
 .features span:after,
 .some-info span:before,
-.some-info span:after{
+.some-info span:after,
+.service span:after,
+.service span:before {
     background-color: #18cfab;
     width: 75px;
     content: "";
@@ -279,6 +294,7 @@ hr {
 }
 .portfolio {
     padding-top: 180px;
+    margin-right: 76px;
 }
 .some-info {
     display: inline-block;
@@ -358,7 +374,114 @@ hr {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-top: 65px;
 }
 .work {
     background: #f8fcfe;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.work h2 {
+    color: #4e4e4e;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 99px;
+    display: block;
+
+}
+
+.work li {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+}
+.work a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #717171;
+    font-size: 14px;
+    line-height: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-right: 14px;
+    padding-left: 14px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border: 1px solid #ebebeb;
+}
+.design a:hover,
+.design a:active{
+    border-top: 2px solid #18cfab;
+    color: #18cfab;
+}
+
+.load button {
+    width: 165px;
+    height: 60px;
+    border: none;
+    border-radius: 2px;
+    background: #18cfab;
+}
+.load button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.load span {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+.service {
+    background: #ffffff;
+    border-top: 2px solid #e1e1e1;
+    display: flex;
+    flex-direction: column;
+}
+.service h3 {
+    color: #4e4e4e;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 103px;
+}
+.some-menu {
+
+}
+.some-menu li {
+    display: inline-block;
+}
+.some-menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #ebecec;
+    color: #717171;
+    font-size: 16px;
+    line-height: 39px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+.some-menu a:hover {
+    color: #ffffff
+}
+.some-menu li:hover {
+    background: #18cfab;
 }
