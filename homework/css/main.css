@@ -214,17 +214,17 @@ button.purchase a {
     height: 20px;
     text-align: center;
 }
-span:before,
-span:after {
+.features span:before,
+.features span:after,
+.some-info span:before,
+.some-info span:after{
     background-color: #18cfab;
     width: 75px;
     content: "";
     display: block;
     height: 1px;
 }
-span:after {
-    margin-bottom: 30px;
-}
+
 .features h3 {
     font-size: 18px;
     line-height: 40px;
@@ -239,12 +239,14 @@ span:after {
     text-decoration: none;
     color: #717171;
 }
-.features a:active {
+.features a:active,
+.features a:hover{
     color: #18cfab;
 }
 .features p {
     margin: 0;
     padding-bottom: 75px;
+    padding-right: 30px;
 }
 hr {
     background-color: #18cfab;
@@ -253,16 +255,16 @@ hr {
     text-align: center;
 }
 
-.col-md-4 img {
+.row img {
     float: left;
     fill: #18cfab;
     /*position: absolute;*/
 }
-/*span::before {*/
-    /*content: '';*/
-/*}*/
+
 .info {
     background: #090f14;
+    display: flex;
+    justify-content: space-between;
 }
 .info h2 {
     font-size: 36px;
@@ -272,7 +274,15 @@ hr {
     color: #ffffff;
     display: inline-block;
     margin-top: 100px;
-    margin-left: 562px;
+    text-align: center;
+    position: relative;
+}
+.portfolio {
+    padding-top: 180px;
+}
+.some-info {
+    display: inline-block;
+    width: 50%;
 }
 .menu .active,
 .menu a:hover {
@@ -282,15 +292,16 @@ hr {
     border-top: 2px solid #18cfab;
 }
 .info nav {
-    margin-top: 250px;
+    margin-top: 50px;
 }
 .menu ul {
     display: inline-block;
+    padding: 0;
 
 }
 .menu li {
     display: inline-block;
-    /*margin-left: 975px;*/
+    float: left;
 }
 .menu a {
     text-decoration: none;
@@ -298,10 +309,55 @@ hr {
     color: #f5f5f5;
     font-size: 16px;
     line-height: 42px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-right: 22px;
+}
+.some-info button {
+    height: 40px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 4px;
+}
+.first {
+    background: #9c5da5;
+    width: 400px;
+}
+.second {
+    background: #11b0de;
+    width: 470px;
+}
+.third {
+    background: #d67f7f;
+    width: 370px;
+}
+.fourth {
+    background: #20bc9d;
+    width: 500px;
+}
+.fifth {
+    background: #bb8a36;
+    width: 470px;
+    margin-bottom: 100px;
+}
+.some-info button p {
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    line-height: 27px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-top: 8px;
+    text-align: left;
+    padding-bottom: 40px;
+}
+.diagram {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .work {
     background: #f8fcfe;
