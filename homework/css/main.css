@@ -230,6 +230,8 @@ button.purchase a {
 .features h2 span {
     background: transparent;
     position: relative;
+    width: 8px;
+    height: 8px;
     z-index: 1;
     width: 20px;
     height: 20px;
@@ -406,9 +408,10 @@ hr {
     flex-direction: column;
     margin-top: 65px;
 }
-
-.work {
+.our-work {
     background: #f8fcfe;
+}
+.work {
     flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
@@ -463,7 +466,7 @@ button.load {
     margin-bottom: 100px;
 }
 
-.load button a {
+.load a {
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
@@ -471,6 +474,7 @@ button.load {
     line-height: 42px;
     font-family: 'Montserz334ckrat', sans-serif;
     font-weight: 700;
+    border: none;
 }
 
 .load span {
@@ -483,7 +487,7 @@ button.load {
 }
 .service-info {
     background: #ffffff;
-    border-top: 2px solid #e1e1e1;
+    border-top: 2px  solid #e1e1e1;
 }
 .service {
     flex-direction: column;
@@ -565,7 +569,8 @@ button.load {
 .ready {
     background: #40474b;
 }
-.buy {
+.buy,
+.news{
     flex-direction: column;
 }
 .buy h2 {
@@ -611,4 +616,70 @@ button.load {
     padding-bottom: 25px;
     padding-left: 15px;
     padding-right: 15px;
+}
+.breaking-news {
+    background: #ffffff;
+}
+
+.news h2 {
+    color: #4e4e4e;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 103px;
+    display: block;
+}
+.works,
+.purchasing {
+    background: #25333c;
+}
+.customers,
+.office {
+    background: #18cfab;
+}
+.work,
+.customers,
+.purchasing,
+.office {
+    width: 25%;
+
+}
+
+.work,
+.purchasing {
+    border-top: 8px solid #18cfab;
+}
+
+.customers,
+.office {
+    border-top: 8px solid #25333c;
+}
+
+.work-info a {
+    font-size: 20px;
+    line-height: 31.83px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 48px;
+    display: inline-flex;
+}
+.work-info p {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+#first p,
+#second p,
+#third p,
+#fourth p {
+    font-size: 18px;
+    line-height: 42px;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
 }
