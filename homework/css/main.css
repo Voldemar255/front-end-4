@@ -2,16 +2,12 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-.wrapper {
-
-}
-
-.container {
-    display: flex;
+.wraper {
     margin: 0 auto;
     max-width: 1170px;
     padding: 0;
     align-items: center;
+    display: flex;
 }
 
 .header {
@@ -46,16 +42,17 @@ html {
     color: #b8b8b8;
     font-weight: 700;
     padding-bottom: 56px;
-
 }
 
 .main-menu .active,
 .main-menu a:hover {
     color: #2ca086;
 }
+
 .main-menu a:hover {
-border-bottom: 3px solid #18cfab;
+    border-bottom: 3px solid #18cfab;
 }
+
 .search {
     margin-left: 32px;
 }
@@ -148,6 +145,7 @@ button.purchase a {
     text-transform: uppercase;
     padding: 15px;
 }
+
 .working {
     display: flex;
     flex-direction: row;
@@ -163,10 +161,12 @@ button.purchase a {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .theme,
 .support {
     border-top: 8px solid #18cfab;
 }
+
 .custom,
 .responsive {
     border-top: 8px solid #ffffff;
@@ -182,32 +182,40 @@ button.purchase a {
     display: block;
     margin-bottom: 48px;
 }
+
 .working a:nth-child(even) {
     color: #2ca086;
 }
+
 .working a:nth-child(odd) {
     color: white;
 }
+
 .theme,
 .support {
     background: #1c2a33;
 }
+
 .custom,
 .responsive {
     background: #18cfab;
 }
+
 .finger,
 .brilliant,
 .lamp,
 .device {
     margin-top: 88px;
 }
+
 .working p {
     font-size: 11px;
 }
+
 .features {
     display: flex;
 }
+
 .features h2 {
     font-size: 36px;
     line-height: 40px;
@@ -227,6 +235,7 @@ button.purchase a {
     height: 20px;
     text-align: center;
 }
+
 .features span:before,
 .features span:after,
 .some-info span:before,
@@ -250,19 +259,23 @@ button.purchase a {
     margin: 0;
     padding-left: 25px;
 }
+
 .features a {
     text-decoration: none;
     color: #717171;
 }
+
 .features a:active,
-.features a:hover{
+.features a:hover {
     color: #18cfab;
 }
+
 .features p {
     margin: 0;
     padding-bottom: 75px;
     padding-right: 30px;
 }
+
 hr {
     background-color: #18cfab;
     width: 75px;
@@ -281,6 +294,7 @@ hr {
     display: flex;
     justify-content: space-between;
 }
+
 .info h2 {
     font-size: 36px;
     line-height: 40px;
@@ -292,33 +306,41 @@ hr {
     text-align: center;
     position: relative;
 }
+
 .portfolio {
     padding-top: 180px;
     margin-right: 76px;
 }
+
 .some-info {
     display: inline-block;
     width: 50%;
 }
+
 .menu .active,
 .menu a:hover {
     color: #18cfab;
 }
+
 .menu a:hover {
     border-top: 2px solid #18cfab;
 }
+
 .info nav {
     margin-top: 50px;
 }
+
 .menu ul {
     display: inline-block;
     padding: 0;
 
 }
+
 .menu li {
     display: inline-block;
     float: left;
 }
+
 .menu a {
     text-decoration: none;
     text-transform: uppercase;
@@ -331,33 +353,40 @@ hr {
     padding-bottom: 10px;
     margin-right: 22px;
 }
+
 .some-info button {
     height: 40px;
     margin-top: 14px;
     border: none;
     border-radius: 4px;
 }
+
 .first {
     background: #9c5da5;
     width: 400px;
 }
+
 .second {
     background: #11b0de;
     width: 470px;
 }
+
 .third {
     background: #d67f7f;
     width: 370px;
 }
+
 .fourth {
     background: #20bc9d;
     width: 500px;
 }
+
 .fifth {
     background: #bb8a36;
     width: 470px;
     margin-bottom: 100px;
 }
+
 .some-info button p {
     color: white;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -370,18 +399,21 @@ hr {
     text-align: left;
     padding-bottom: 40px;
 }
+
 .diagram {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin-top: 65px;
 }
+
 .work {
     background: #f8fcfe;
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    height: 100%;
 }
+
 .work h2 {
     color: #4e4e4e;
     font-size: 36px;
@@ -390,14 +422,16 @@ hr {
     font-weight: 400;
     margin-top: 99px;
     display: block;
-
 }
 
 .work li {
     display: inline-block;
     margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
+    margin-top: 110px;
 }
+
 .work a {
     text-decoration: none;
     text-transform: uppercase;
@@ -412,28 +446,33 @@ hr {
     padding-bottom: 24px;
     border: 1px solid #ebebeb;
 }
+
 .design a:hover,
-.design a:active{
+.design a:active {
     border-top: 2px solid #18cfab;
     color: #18cfab;
 }
 
-.load button {
+button.load {
     width: 165px;
     height: 60px;
+    border-radius: 4px;
     border: none;
-    border-radius: 2px;
     background: #18cfab;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
+
 .load button a {
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
     font-size: 14px;
     line-height: 42px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserz334ckrat', sans-serif;
     font-weight: 700;
 }
+
 .load span {
     text-transform: uppercase;
     color: #ffffff;
@@ -442,14 +481,15 @@ hr {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
-
-
-.service {
+.service-info {
     background: #ffffff;
     border-top: 2px solid #e1e1e1;
-    display: flex;
-    flex-direction: column;
 }
+.service {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .service h3 {
     color: #4e4e4e;
     font-size: 36px;
@@ -459,13 +499,23 @@ hr {
     display: inline-block;
     margin-top: 103px;
 }
-.some-menu {
 
+.some-menu ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
 .some-menu li {
     display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 113px;
 }
-.some-menu a{
+
+.some-menu li a {
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
     border: 1px solid #ebecec;
@@ -474,14 +524,91 @@ hr {
     line-height: 39px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 34px;
+    padding-right: 34px;
 }
+
 .some-menu a:hover {
-    color: #ffffff
+    color: #ffffff;
+}
+.some-menu li a:hover {
+    border-bottom: none;
 }
 .some-menu li:hover {
     background: #18cfab;
+}
+
+.some-menu li:hover::after {
+    content: '';
+    position: absolute;
+    left: 60px;
+    bottom: -40px;
+    border: 20px solid transparent;
+    border-top: 20px solid #18cfab;
+}
+.inform {
+    flex-direction: row;
+}
+
+.inform p{
+    color: #777777;
+    font-size: 13.66px;
+    line-height: 24.39px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    margin-left: 22px;
+    text-align: justify;
+}
+
+.ready {
+    background: #40474b;
+}
+.buy {
+    flex-direction: column;
+}
+.buy h2 {
+    color: #18cfab;
+    font-size: 40px;
+    line-height: 40.46px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 130px;
+    text-transform: uppercase;
+}
+.buy h3 {
+    color: #d8d8d8;
+    font-size: 16px;
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+    display: block;
+}
+.buy button {
+    width: 166px;
+    height: 60px;
+    background: #18cfab;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 77px;
+    margin-bottom: 130px;
+}
+
+.buy button a {
+    display: block;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    line-height: 31.83px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
