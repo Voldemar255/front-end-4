@@ -629,6 +629,7 @@ button.load {
     font-weight: 400;
     margin-top: 103px;
     display: block;
+    margin-bottom: 30px;
 }
 .works,
 .purchasing {
@@ -638,15 +639,16 @@ button.load {
 .office {
     background: #18cfab;
 }
-.work,
+
+.works,
 .customers,
 .purchasing,
 .office {
-    width: 25%;
-
+    display: inline-block;
+width: 100%;
 }
 
-.work,
+.works,
 .purchasing {
     border-top: 8px solid #18cfab;
 }
@@ -655,7 +657,19 @@ button.load {
 .office {
     border-top: 8px solid #25333c;
 }
-
+.work-info {
+display: inline-flex;
+justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.work-info img {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    vertical-align: middle;
+}
 .work-info a {
     font-size: 20px;
     line-height: 31.83px;
@@ -663,23 +677,40 @@ button.load {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    display: block;
     margin-bottom: 48px;
-    display: inline-flex;
 }
-.work-info p {
+.work-info h3{
     font-size: 36px;
     line-height: 42px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    text-align: center;
+    display: block;
 }
-#first p,
-#second p,
-#third p,
-#fourth p {
+.work-info p{
     font-size: 18px;
     line-height: 42px;
     font-weight: 200;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: block;
+}
+.works p,
+.purchasing p {
+    color: #18cfab;
+}
+.customers p,
+.office p {
+    color: #25333c;
+}
+.background-icon,
+.background {
+    width: 108px;
+    height: 108px;
+    background: #25333c;
+    border-radius: 100%;
+}
+.background {
+    background: #18cfab;
 }
