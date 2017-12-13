@@ -554,6 +554,7 @@ button.load {
     display: inline-block;
     box-sizing: border-box;
     position: relative;
+    margin: 0 auto;
     margin-top: 113px;
 }
 
@@ -586,7 +587,7 @@ button.load {
 .some-menu li:hover::after {
     content: '';
     position: absolute;
-    left: 60px;
+    left: 70px;
     bottom: -40px;
     border: 20px solid transparent;
     border-top: 20px solid #18cfab;
@@ -683,7 +684,7 @@ button.load {
 .customers,
 .purchasing,
 .office {
-    display: block;
+    display: inline-block;
     width: 25%;
 }
 
@@ -749,6 +750,14 @@ button.load {
     height: 108px;
     background: #25333c;
     border-radius: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.background-icon a,
+.background a {
+    margin: 0 auto;
+    padding-top: 40px;
+    display: block;
 }
 .background {
     background: #18cfab;
@@ -760,14 +769,24 @@ button.load {
     width: 166px;
     height: 166px;
     border-radius: 100%;
-    border: 1px solid #18cfab;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+.circle {
+    border: 2px solid #25333c;
 }
 
 .some-circle {
-    border: 1px solid #25333c;
+    border: 2px solid #18cfab;
 }
 .table {
     background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 103px;
 }
 .table button {
     width: 173px;
@@ -802,14 +821,15 @@ button.load {
     text-align: center;
     margin: 25px;
 }
-.price h2 {
+.header-price h2 {
     color: #4e4e4e;
     font-size: 36px;
     line-height: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    display: block;
-    text-align: center ;
+    display: inline-block;
+    text-align: center;
+    margin-top: 101px;
 }
 .cost {
     background: #2e4a5b;
@@ -820,9 +840,12 @@ button.load {
     margin: 0 auto;
     text-align: center;
 }
-.cost li {
-    border: 1px solid #e1e1e1;
+.professional li a,
+.business li a,
+.personal li a,
+.diamond li a{
     color: #777777;
+    text-decoration: none;
     font-size: 14px;
     line-height: 46.83px;
     font-family: 'Montserrat', sans-serif;
@@ -830,7 +853,7 @@ button.load {
     text-align: center;
     vertical-align: center ;
     display: block;
-    border: 1px solid red;
+    border-bottom: 1px solid #e5e6e7;
 }
 .cost p{
     color: white;
@@ -860,8 +883,79 @@ button.load {
     border-radius: 3px;
 }
 .table button:hover,
-.cost:hover,
-.table h3:hover
+.cost:hover
 {
     background-color: #18cfab;
 }
+.table h3:hover {
+    color: #18cfab;
+}
+.opinion {
+    background: #2e404d;
+}
+.header-opinion h2 {
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    margin-top: 101px;
+}
+.people p {
+    color: #bbbbbb;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    display: block;
+    text-align: center;
+    padding: 31px;
+}
+.outer {
+
+}
+.inner {
+
+}
+.custom-slide {
+    border-radius: 100%;
+    width: 57px;
+    height: 57px;
+    border: 10px solid #2b5f62;
+       color: #3c3c3c;
+    display: block;
+    position: relative;
+    background: #bb8a36;
+}
+
+.custom-slide div {
+    height: 105px;
+    border: none;
+}
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+}
+.slick-prev,
+.slick-next {
+    width: 31px;
+    height: 31px;
+    background: #3c4140;
+    border: none;
+    font-size: 0;
+}
+.slick-prev {
+    left: 0;
+    background-image: url(../images/Left-arrow.svg);
+}
+.slick-next {
+    right: 0;
+    background-image: url(../images/Right-arrow.svg);
+}
+.slick-prev:hover,
+.slick-next:hover {
+    background: #18cfab ;
+}
+
