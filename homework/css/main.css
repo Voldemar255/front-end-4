@@ -8,6 +8,7 @@ html {
     padding: 0;
     align-items: center;
     display: flex;
+    border: 1px solid red;
 }
 
 .header {
@@ -118,6 +119,7 @@ button.purchase {
     height: 60px;
     margin-right: 15px;
     border: none;
+    border-radius: 4px;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
     outline: 1px solid;
     outline-color: rgba(25, 255, 255, .8);
@@ -291,12 +293,34 @@ button.purchase:hover {
 .some-info span:before,
 .some-info span:after,
 .service span:after,
-.service span:before {
+.service span:before,
+#amazing:after,
+#amazing:before,
+.service span:after,
+.service span:before,
+.news span:after,
+.news span:before,
+.header-price span:after,
+.header-price span:before,
+.header-opinion span:after,
+.header-opinion span:before {
     background-color: #18cfab;
     width: 75px;
     content: "";
     display: block;
     height: 1px;
+    margin-top: 3px;
+}
+.features span:after,
+.some-info span:after,
+.service span:after,
+#amazing:after,
+.service span:after,
+.news span:after,
+.header-price span:after,
+.header-opinion span:after {
+
+    margin-right: 50px;
 }
 
 .features h3 {
@@ -305,7 +329,7 @@ button.purchase:hover {
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     color: #717171;
-    display: inline-block;
+    display: block;
     margin: 0;
     padding-left: 25px;
 }
@@ -331,6 +355,7 @@ hr {
     width: 75px;
     margin: 3px;
     text-align: center;
+    display: block;
 }
 
 .row img {
@@ -618,20 +643,21 @@ button.load {
 .ready {
     background: #40474b;
 }
-.buy,
-.news{
-    flex-direction: column;
-}
+
 .buy h2 {
     color: #18cfab;
     font-size: 40px;
     line-height: 40.46px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    margin-top: 130px;
+    padding-top: 130px;
     text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
 }
-.buy h3 {
+.buy p {
     color: #d8d8d8;
     font-size: 16px;
     line-height: 40px;
@@ -639,6 +665,7 @@ button.load {
     font-weight: 400;
     margin-top: 40px;
     display: block;
+    text-align: justify;
 }
 .buy button {
     width: 166px;
@@ -647,8 +674,10 @@ button.load {
     border-radius: 4px;
     border: none;
     box-sizing: border-box;
-    margin-top: 77px;
-    margin-bottom: 130px;
+    margin-top: 127px;
+    display: block;
+    text-align: center;
+    margin-left: 77px;
 }
 
 .buy button a {
@@ -670,7 +699,25 @@ button.load {
     background: #ffffff;
 }
 .social {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+.social-block,
+.amazing{
+    width: 264px;
+    border: 1px solid darkblue;
+}
+.social p.admin:after {
+    content: "|";
+    padding: 10px;
+}
+.post {
+    background: #f8fcfe;
+    width: 100%;
 }
 
 .news h2 {
@@ -681,7 +728,26 @@ button.load {
     font-weight: 400;
     margin-top: 103px;
     display: block;
+    text-align: center;
     margin-bottom: 30px;
+}
+.social h2 {
+    color: #4e4e4e;
+    font-size: 18px;
+    line-height: 38.97px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    padding: 16px;
+    padding-bottom: 0;
+}
+.social p {
+    display: inline-block;
+    padding: 16px;
+    padding-bottom: 14px;
+    margin: 0;
 }
 .works,
 .purchasing {
@@ -839,7 +905,7 @@ button.load {
     line-height: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    display: inline-block;
+    display: block;
     text-align: center;
     margin-top: 101px;
 }
@@ -912,9 +978,9 @@ button.load {
     line-height: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    display: inline-block;
+    display: block;
     text-align: center;
-    margin-top: 101px;
+    padding-top: 100px;
 }
 .people p {
     color: #bbbbbb;
@@ -986,6 +1052,7 @@ button.load {
     font-weight: 700;
     display: block;
     text-transform: uppercase ;
+    text-align: center;
 }
 .check-user p{
     color: #bbbbbb;
