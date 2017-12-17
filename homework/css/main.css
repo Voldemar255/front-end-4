@@ -303,7 +303,9 @@ button.purchase:hover {
 .header-price span:after,
 .header-price span:before,
 .header-opinion span:after,
-.header-opinion span:before {
+.header-opinion span:before,
+.header-team span:after,
+.header-team span:before{
     background-color: #18cfab;
     width: 75px;
     content: "";
@@ -709,27 +711,48 @@ button.load {
 .social-block,
 .amazing{
     width: 264px;
-    border: 1px solid darkblue;
+}
+.social-block {
+    border: 1px solid #ececec;
 }
 .social p.admin:after {
     content: "|";
-    padding: 10px;
+    /*padding: 10px;*/
 }
 .post {
     background: #f8fcfe;
     width: 100%;
 }
-
+.photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.social-profile {
+    margin: 0;
+    padding: 0;
+}
+.social-profile a {
+    border: 1px solid #c1f2e9;
+    display: block;
+    padding: 22px;
+}
+.header-team h2,
 .news h2 {
     color: #4e4e4e;
     font-size: 36px;
     line-height: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    margin-top: 103px;
     display: block;
     text-align: center;
+}
+.header-team h2 {
+    margin-top: 103px;
+}
+.news h2 {
     margin-bottom: 30px;
+    margin-top: 103px;
 }
 .social h2 {
     color: #4e4e4e;
@@ -1067,16 +1090,21 @@ button.load {
     content: url("../images/Forma.png");
 }
 .team {
-    background: #2e4a5b;
-    width: 264px;
+    background: #ffffff;
+    margin-top: 101px;
+
 }
 .team article {
     color: #fff;
-    font-weight: 700;
+    font-weight: 400;
+    padding-top: 21px;
+    padding-left: 25px;
 }
 .team p{
     color: #18cfab;
     font-weight: 200;
+    padding-bottom: 21px;
+    padding-left: 25px;
 }
 .team article,
 .team p {
@@ -1089,4 +1117,207 @@ button.load {
     background: #2e4a5b;
     display: inline-block;
     width: 25%;
+    margin: 0;
+    padding: 0;
+}
+
+.social-profile a:hover {
+    transform: perspective(300px) rotateY(180deg);
+    color: #eee;
+    transition: transform 0.2s linear, background-color 0s linear 0.1s, color 0s linear 0.1s;
+}
+.social-profile a:nth-child(1):hover {
+    background-color: #3B5998;
+}
+.social-profile a:nth-child(2):hover {
+    background-color: #00ACED;
+}
+.social-profile a:nth-child(3):hover {
+    background-color: #3B5998;
+}
+.social-profile a:nth-child(4):hover {
+    background-color: #00ACED;
+}
+
+.team-lead {
+    background: #2e4a5b;
+    width: 264px;
+}
+.header-team {
+    display: block;
+    text-align: center;
+}
+.header-team span{
+    display: block;
+    text-align: center;
+}
+.creative {
+    background: #233641;
+}
+.creative-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.header-creative h2 {
+    color: #ffffff;
+    font-size: 51px;
+    line-height:62px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase ;
+    text-align: center;
+    padding-top: 130px;
+    margin: 0 auto;
+}
+.header-creative p {
+    color: #18cfab;
+    font-size: 47px;
+    line-height: 65px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    text-transform: uppercase ;
+    text-align: center;
+    margin: 0 auto;
+}
+.ipad {
+    margin-right: 60px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-left: 490px;
+    width: 100%;
+    position: absolute;
+}
+.list ul {
+    list-style: url("../images/ok.png");
+}
+.list li {
+    color: #f7f7f7;
+    padding-left: 21px;
+}
+.list li+li {
+    padding-top: 15px;
+}
+.creative button {
+    width: 166px;
+    height: 60px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 70px;
+    background: #18cfab;
+}
+.creative a {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    line-height: 31.83px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+}
+.place {
+    background: white;
+}
+.second-block h2 {
+    color: #4e4e4e;
+    font-size: 36.02px;
+    line-height:40.02px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    padding-top: 130px;
+    margin: 0 auto;
+}
+
+.name-form,
+.name-form::placeholder,
+.email-form,
+.email-form::placeholder,
+.message-form,
+.message-form::placeholder {
+    font-size: 14.01px;
+    font-weight: 200;
+    line-height: 19.01px;
+    color: #90aebd;
+    margin: 10px;
+    display: block;
+}
+.name-form input,
+.email-form input,
+.message-form input{
+    width: 555px;
+    background-color: transparent;
+    vertical-align: middle;
+    color: #666;
+    cursor: pointer;
+    padding: 10px;
+}
+input,
+button {
+    outline: none;
+}
+.request  {
+    width: 555px;
+    background-color: #18cfab;
+    border-radius: 4px;
+    border: none;
+}
+.request a {
+    color: #fff;
+    font-size: 14.01px;
+    line-height: 16.01px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #22353f;
+}
+.content p,
+.content span{
+    color: #aeaeae;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 47px;
+    padding-bottom: 47px;
+}
+.content span {
+    color: #18cfab;
 }
