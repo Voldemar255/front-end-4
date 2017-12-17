@@ -1,10 +1,10 @@
 "use strict";
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.main-slider').slick({
-    autoplay: true,
+        autoplay: true,
         autoplaySpeed: 4000,
-});
+    });
     // $('.slider-for').slick({
     //     slidesToShow: 1,
     //     slidesToScroll: 1,
@@ -23,3 +23,14 @@ $(document).ready(function(){
     // });
 
 });
+function initMap() {
+    var khmelnitsky = {lat: 49.422983, lng: 26.987133};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 16,
+        center: khmelnitsky
+    });
+    var marker = new google.maps.Marker({
+        position: khmelnitsky,
+        map: map
+    });
+}
