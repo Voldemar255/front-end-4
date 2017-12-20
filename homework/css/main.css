@@ -160,52 +160,6 @@ button.purchase:hover {
     text-shadow: 1px 1px 2px #427388;
 }
 
-.some-div {
-    display: block;
-    margin-top: 50px;
-}
-
-.main-slider {
-    display: block;
-    position: relative;
-    width: 170px;
-    height: 105px;
-    background: #bb8a36;
-}
-
-.main-slider div {
-    height: 105px;
-    border: none;
-}
-
-.slick-arrow {
-    position: absolute;
-    top: 100%;
-}
-
-.slick-prev,
-.slick-next {
-    width: 65px;
-    height: 65px;
-    background: #3c4140;
-    border: none;
-    font-size: 0;
-}
-
-.slick-prev {
-    left: 0;
-    background-image: url(../images/Left-arrow.svg);
-}
-
-.slick-next {
-    right: 0;
-    background-image: url(../images/Right-arrow.svg);
-}
-
-.slick-prev:hover,
-.slick-next:hover {
-    background: #18cfab;
-}
 
 .working {
     display: flex;
@@ -1056,6 +1010,60 @@ button.load {
 .check-user h2:hover {
     color: #18cfab;
 }
+.some-div {
+    display: block;
+    margin-top: 50px;
+}
+
+.main-slider {
+    display: block;
+    position: relative;
+    width: 165px;
+    height: 165px;
+    border-radius: 100%;
+    background: #bb8a36;
+}
+
+.main-slider div {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: none;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    background: transparent;
+}
+
+.slick-prev,
+.slick-next {
+    width: 65px;
+    height: 65px;
+    background: #3c4140;
+    border: 1px solid #bbbbbb;
+    font-size: 0;
+}
+
+.slick-prev {
+    left: 0;
+    background-image: url(../images/Left-arrow.svg);
+}
+
+.slick-next {
+    right: 0;
+    background-image: url(../images/Right-arrow.svg);
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background: #18cfab;
+    border: none;
+}
+.citate span {
+    display: block;
+}
 
 .opinion {
     background: #2e404d;
@@ -1553,12 +1561,21 @@ button {
 
 .media {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 240px;
 }
+.media li {
+    width: 100%;
+    border: 1px solid #acacac;
+    display: block;
+}
+.media li:hover {
+    border: none;
+    background: #18cfab;
+}
 
-.third-column p {
+.third-column a {
     color: #b8b8b8;
     font-size: 14px;
     line-height: 40px;
@@ -1566,14 +1583,6 @@ button {
     font-weight: 200;
     display: inline-block;
     margin: 0 auto;
-}
-
-.audio,
-.galery,
-.image {
-    width: 100%;
-    display: block;
-    border: 1px solid #acacac;
 }
 
 .your-email form {
