@@ -8,7 +8,6 @@ html {
     padding: 0;
     align-items: center;
     display: flex;
-    border: 1px solid red;
 }
 
 .header {
@@ -53,7 +52,47 @@ html {
 .main-menu a:hover {
     border-bottom: 3px solid #18cfab;
 }
+#toggle-button {
+    border: none;
+    background: transparent;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url("../images/Search.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
 
+#toggle-button a {
+    padding: 10px;
+}
+.some-form {
+    width: 40px;
+    border-radius: 40%;
+    border: none;
+    display: block;
+    display: none;
+    position: relative;
+    margin-left: -140px;
+    margin-top: 30px;
+}
+.some-form input {
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid #4f4d4d;
+    color: #919198;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    /*position: relative;*/
+}
+
+.some-form input::placeholder {
+
+}
 .search {
     margin-left: 32px;
 }
@@ -225,10 +264,6 @@ button.purchase:hover {
 
 .working p {
     font-size: 11px;
-}
-
-.features {
-    display: flex;
 }
 
 .features h2 {
@@ -621,7 +656,11 @@ button.load {
 .ready {
     background: #40474b;
 }
-
+.buy {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .buy h2 {
     color: #18cfab;
     font-size: 40px;
@@ -658,6 +697,8 @@ button.load {
     display: block;
     text-align: center;
     margin-left: 77px;
+    margin-top: 80px;
+    margin-bottom: 127px;
 }
 
 .buy button a {
@@ -712,6 +753,8 @@ button.load {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 100px;
 }
 
 .social-profile {
@@ -739,7 +782,11 @@ button.load {
 .header-team h2 {
     margin-top: 103px;
 }
-
+.header-team span:before,
+.header-team span:after{
+    display: block;
+    margin: 0 auto;
+}
 .news h2 {
     margin-bottom: 30px;
     margin-top: 103px;
@@ -915,13 +962,22 @@ button.load {
     text-decoration: none;
     padding: 15px 35px;
 }
-
+.header-price {
+    display: block;
+}
 .price {
-    display: flex;
-    flex-direction: row;
     background: #f8fcfe;
 }
-
+.propose {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    vertical-align: center;
+    margin-top: 70px;
+}
+.propose button {
+    margin-left: 50px;
+}
 .price h3 {
     color: #717171;
     font-size: 24px;
@@ -933,7 +989,7 @@ button.load {
     margin: 25px;
 }
 
-.header-price h2 {
+.header-price p {
     color: #4e4e4e;
     font-size: 36px;
     line-height: 40px;
@@ -1005,6 +1061,10 @@ button.load {
 .cost:hover {
     background-color: #18cfab;
 }
+.professional p,
+.professional button {
+    background-color: #18cfab;
+}
 
 .table h3:hover,
 .check-user h2:hover {
@@ -1012,29 +1072,38 @@ button.load {
 }
 .some-div {
     display: block;
+    vertical-align: center;
     margin-top: 50px;
 }
-
+.main-thumb-slider img {
+    border-radius: 100%;
+}
 .main-slider {
     display: block;
     position: relative;
     width: 165px;
     height: 165px;
     border-radius: 100%;
-    background: #bb8a36;
+    border: 12px solid #2b5f62;
 }
 
-.main-slider div {
+.main-thumb-slider .current-slider {
+border: 2px solid #18cfab;
+}
+
+.main-thumb-slider div {
+    border: 4px solid #18cfab;
+    border-radius: 100%;
     width: 70px;
     height: 70px;
-    border-radius: 100%;
-    border: none;
+    background-color: #fff;
 }
 
 .slick-arrow {
     position: absolute;
     top: 50%;
     background: transparent;
+    transform: translateY(-50%);
 }
 
 .slick-prev,
@@ -1047,12 +1116,12 @@ button.load {
 }
 
 .slick-prev {
-    left: 0;
+    left: -80px;
     background-image: url(../images/Left-arrow.svg);
 }
 
 .slick-next {
-    right: 0;
+    right: -80px;
     background-image: url(../images/Right-arrow.svg);
 }
 
@@ -1090,60 +1159,6 @@ button.load {
     text-align: center;
     padding: 31px;
 }
-
-.outer {
-
-}
-
-.inner {
-
-}
-
-/*.custom-slider {*/
-/*border-radius: 100%;*/
-/*width: 57px;*/
-/*height: 57px;*/
-/*border: 10px solid #2b5f62;*/
-/*color: #3c3c3c;*/
-/*display: block;*/
-/*position: relative;*/
-/*background: #bb8a36;*/
-/*display: inline-block;*/
-/*float: left;*/
-/*}*/
-/*.slider-for div {*/
-/*border-radius: 100%;*/
-/*width: 57px;*/
-/*height: 57px;*/
-/*}*/
-
-/*.custom-slider div {*/
-/*border: none;*/
-/*}*/
-/*.slick-arrow {*/
-/*position: absolute;*/
-/*top: 50%;*/
-/*}*/
-/*.slick-prev,*/
-/*.slick-next {*/
-/*width: 31px;*/
-/*height: 31px;*/
-/*background: #3c4140;*/
-/*border: none;*/
-/*font-size: 0;*/
-/*}*/
-/*.slick-prev {*/
-/*left: 0;*/
-/*background-image: url(../images/Left-arrow.svg);*/
-/*}*/
-/*.slick-next {*/
-/*right: 0;*/
-/*background-image: url(../images/Right-arrow.svg);*/
-/*}*/
-/*.slick-prev:hover,*/
-/*.slick-next:hover {*/
-/*background: #18cfab ;*/
-/*}*/
 
 .check-user h2 {
     color: #bbbbbb;
@@ -1252,6 +1267,10 @@ button.load {
     justify-content: space-between;
 
 }
+.header-creative {
+    display: flex;
+    flex-direction: column;
+}
 
 .header-creative h2 {
     color: #ffffff;
@@ -1276,6 +1295,7 @@ button.load {
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 98px;
 }
 
 .ipad {
