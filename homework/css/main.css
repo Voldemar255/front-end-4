@@ -1,4 +1,6 @@
-html {
+
+body {
+    min-width: 320px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -184,7 +186,6 @@ button.purchase a {
     font-size: 13px;
     line-height: 31.83px;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px;
@@ -198,7 +199,6 @@ button.purchase:hover {
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #427388;
 }
-
 
 .working {
     display: flex;
@@ -230,7 +230,6 @@ button.purchase:hover {
     font-size: 20px;
     line-height: 31.83px;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     display: block;
@@ -270,74 +269,59 @@ button.purchase:hover {
     font-size: 36px;
     line-height: 40px;
     font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
     margin-top: 102px;
     margin-bottom: 44px;
     position: relative;
     text-align: center;
 }
 
-.features h2 span {
-    background: transparent;
-    position: relative;
-    width: 8px;
-    height: 8px;
-    z-index: 1;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-}
-
-.features span:before,
-.features span:after,
-.some-info span:before,
-.some-info span:after,
-.service span:after,
-.service span:before,
-#amazing:after,
-#amazing:before,
-.service span:after,
-.service span:before,
-.news span:after,
-.news span:before,
-.header-price span:after,
-.header-price span:before,
-.header-opinion span:after,
-.header-opinion span:before,
-.header-team span:after,
-.header-team span:before,
-.second-block span:after,
-.second-block span:before {
-    background-color: #18cfab;
-    width: 75px;
+.features h2::before,
+.some-info h2::before,
+.service h3::before,
+#amazing::before,
+.news h2::before,
+.header-work h2::before,
+.header-price p::before,
+.header-opinion h2::before,
+.header-team h2::before,
+.second-block h2::before {
     content: "";
-    display: block;
+    background-color: #18cfab;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75px;
     height: 1px;
-    margin-top: 3px;
 }
 
-.features span:after,
-.some-info span:after,
-.service span:after,
-#amazing:after,
-.service span:after,
-.news span:after,
-.header-price span:after,
-.header-opinion span:after,
-.second-block span:after {
-
-    margin-right: 50px;
+.features h2::after,
+.some-info h2::after,
+.service h3::after,
+#amazing::after,
+.news h2::after,
+.header-work h2::after,
+.header-price p::after,
+.header-opinion h2::after,
+.header-team h2::after,
+.second-block h2::after
+ {
+    content: "";
+    background-color: #18cfab;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75px;
 }
 
 .features h3 {
     font-size: 18px;
     line-height: 40px;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
     color: #717171;
     display: block;
     margin: 0;
     padding-left: 25px;
+    position: relative;
 }
 
 .features a {
@@ -380,7 +364,6 @@ hr {
     font-size: 36px;
     line-height: 40px;
     font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     display: inline-block;
     margin-top: 100px;
@@ -428,7 +411,6 @@ hr {
     color: #f5f5f5;
     font-size: 16px;
     line-height: 42px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -474,7 +456,6 @@ hr {
     font-size: 13px;
     line-height: 27px;
     font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     padding-top: 8px;
     text-align: left;
@@ -502,7 +483,6 @@ hr {
     color: #4e4e4e;
     font-size: 36px;
     line-height: 40px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin-top: 99px;
     display: block;
@@ -522,7 +502,6 @@ hr {
     color: #717171;
     font-size: 14px;
     line-height: 42px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     padding-right: 14px;
     padding-left: 14px;
@@ -553,7 +532,6 @@ button.load {
     color: #ffffff;
     font-size: 14px;
     line-height: 42px;
-    font-family: 'Montserz334ckrat', sans-serif;
     font-weight: 700;
     border: none;
 }
@@ -563,7 +541,6 @@ button.load {
     color: #ffffff;
     font-size: 22px;
     line-height: 36px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
@@ -581,7 +558,6 @@ button.load {
     color: #4e4e4e;
     font-size: 36px;
     line-height: 40px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     display: inline-block;
     margin-top: 103px;
@@ -610,7 +586,6 @@ button.load {
     color: #717171;
     font-size: 16px;
     line-height: 39px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -647,7 +622,6 @@ button.load {
     color: #777777;
     font-size: 13.66px;
     line-height: 24.39px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     margin-left: 22px;
     text-align: justify;
@@ -665,7 +639,6 @@ button.load {
     color: #18cfab;
     font-size: 40px;
     line-height: 40.46px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     padding-top: 130px;
     text-transform: uppercase;
@@ -679,7 +652,6 @@ button.load {
     color: #d8d8d8;
     font-size: 16px;
     line-height: 40px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin-top: 40px;
     display: block;
@@ -708,7 +680,6 @@ button.load {
     font-size: 13px;
     line-height: 31.83px;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     padding-top: 20px;
@@ -743,7 +714,28 @@ button.load {
     content: "|";
     /*padding: 10px;*/
 }
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    right: 0;
+    top: 0;
+    background-color: #203e38;
+    /*position: absolute;*/
+    border: none;
 
+}
+.date span {
+    color: #fff;
+    font-size: 16px;
+    line-height: 25.33px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    padding: 3px;
+}
 .post {
     background: #f8fcfe;
     width: 100%;
@@ -773,7 +765,6 @@ button.load {
     color: #4e4e4e;
     font-size: 36px;
     line-height: 40px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     display: block;
     text-align: center;
@@ -1047,6 +1038,22 @@ button.load {
     display: inline-block;
     text-align: center;
 }
+.professional {
+    box-shadow: -3px 5px 10px 0px #e3e6e8;
+}
+/*.professional h3::before {*/
+    /*content: "offer";*/
+    /*!*position: absolute;*!*/
+    /*top: 17px;*/
+    /*right: -20px;*/
+    /*transform: rotate(45deg);*/
+    /*vert-align: middle;*/
+    /*height: 0;*/
+    /*width: 53px;*/
+    /*border-bottom: 17px solid #18cfab;*/
+    /*border-right: 18px solid transparent;*/
+    /*border-left: 18px solid transparent;*/
+/*}*/
 
 .professional,
 .business,
@@ -1164,7 +1171,6 @@ border: 2px solid #18cfab;
     color: #bbbbbb;
     font-size: 16px;
     line-height: 27px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     display: block;
     text-transform: uppercase;
@@ -1175,7 +1181,6 @@ border: 2px solid #18cfab;
     color: #bbbbbb;
     font-size: 13px;
     line-height: 27px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     display: block;
 }
@@ -1196,19 +1201,28 @@ border: 2px solid #18cfab;
     padding-top: 21px;
     padding-left: 25px;
 }
-
+.team-lead {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #2e4a5b;
+    width: 265px;
+    height: 230px;
+}
+.team {
+    position: relative;
+}
 .team p {
     color: #18cfab;
     font-weight: 200;
-    padding-bottom: 21px;
-    padding-left: 25px;
+    /*padding-bottom: 21px;*/
+    /*padding-left: 25px;*/
 }
 
 .team article,
 .team p {
     font-size: 16px;
     line-height: 38.95px;
-    font-family: 'Montserrat', sans-serif;
     display: block;
 }
 
@@ -1219,7 +1233,12 @@ border: 2px solid #18cfab;
     margin: 0;
     padding: 0;
 }
-
+.social-profile img {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 .social-profile a:hover {
     transform: perspective(300px) rotateY(180deg);
     color: #eee;
@@ -1240,11 +1259,6 @@ border: 2px solid #18cfab;
 
 .social-profile a:nth-child(4):hover {
     background-color: #00ACED;
-}
-
-.team-lead {
-    background: #2e4a5b;
-    width: 264px;
 }
 
 .header-team {
@@ -1550,7 +1564,6 @@ button {
     color: #b2b2b2;
     font-size: 14px;
     line-height: 25px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     display: inline-block;
     margin: 0 auto;
@@ -1620,7 +1633,6 @@ button {
     color: #757575;
     font-size: 14px;
     line-height: 26px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     display: inline-block;
     margin: 0 auto;
