@@ -587,8 +587,8 @@ button.load {
     font-weight: 400;
     padding-top: 24px;
     padding-bottom: 24px;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-left: 28px;
+    padding-right: 28px;
 }
 
 .some-menu a:hover {
@@ -707,6 +707,10 @@ button.load {
 
 .social-block {
     border: 1px solid #ececec;
+    position: relative;
+}
+.social-block a {
+    text-decoration: none;
 }
 
 .social p.admin:after {
@@ -721,11 +725,11 @@ button.load {
     right: 0;
     top: 0;
     background-color: #203e38;
-    /*position: absolute;*/
+    position: absolute;
     border: none;
 
 }
-.date span {
+.date span a {
     color: #fff;
     font-size: 16px;
     line-height: 25.33px;
@@ -738,7 +742,16 @@ button.load {
     background: #f8fcfe;
     width: 100%;
 }
-
+.date:hover {
+    background: #18cfab;
+}
+.social-block a {
+    color: #717171;
+}
+.post h2 a:hover,
+.post p a:hover{
+    color: #18cfab;
+}
 .photo {
     display: flex;
     flex-direction: row;
@@ -749,6 +762,7 @@ button.load {
 }
 .find-us {
     width: 100%;
+    height: auto;
 }
 .find-us ul {
     display: flex;
@@ -778,15 +792,26 @@ button.load {
     display: block;
     text-align: center;
 }
+.some-member {
+    display: block;
+    width: 100%;
+    height: auto;
+    top:0;
+    right: 0;
+    left: 0;
+}
 .some-member li {
     list-style: none;
     text-align: left;
+    margin: 0 auto;
+    padding: 0;
 }
 .some-member li:first-child {
     font-size: 16px;
     line-height: 38.95px;
     font-weight: 700;
     color: #fff;
+    padding-top: 20px;
 }
 .some-member li:nth-child(2) {
     font-size: 13px;
@@ -1395,8 +1420,8 @@ border-radius: 100%;
     font-weight: 400;
     display: inline-block;
     text-align: center;
-    padding-top: 130px;
-    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 50px;
 }
 
 .name-form,
@@ -1453,7 +1478,7 @@ button {
     padding: 0;
 }
 
-.request a {
+.request {
     color: #fff;
     font-size: 14.01px;
     line-height: 16.01px;
@@ -1464,6 +1489,7 @@ button {
     padding: 27px 200px;
     text-decoration: none;
     margin: 0 auto;
+    outline: none;
 }
 
 .footer {
@@ -1511,7 +1537,7 @@ button {
     padding-bottom: 37px;
 }
 
-#icon p {
+.icon p {
     color: #fff;
     font-size: 40px;
     line-height: 9.53px;

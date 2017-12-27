@@ -1,10 +1,10 @@
 "use strict";
-$( "#toggle-button" ).on( "mousemove", function(event) {
+$("#toggle-button").on("mousemove", function (event) {
     event.preventDefault(),
-    $('.some-form').toggle();
+        $('.some-form').toggle();
 });
 
-$( "#toggle-button" ).on( "mouseleave", function() {
+$("#toggle-button").on("mouseleave", function () {
     $('.some-form').hidden;
 });
 
@@ -15,7 +15,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplay: true,
         asNavFor: '.main-thumb-slider',
-        autoplaySpeed: 4000
+        autoplaySpeed: 4000,
     });
 
     $('.main-thumb-slider').slick({
@@ -30,8 +30,8 @@ $(document).ready(function () {
     });
 
 
-
 });
+
 function initMap() {
     var khmelnitsky = {lat: 49.422983, lng: 26.987133};
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -44,39 +44,35 @@ function initMap() {
     });
 }
 
-$('name-form').validate({
-    rules: {
-        name: {
-            required: true,
-            minlength: 1,
+
+
+$(function () {
+    $('name-form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 1
+            }
         }
-    }
-});
+    });
 
-
-$('email-form').validate({
-    rules: {
-        email: {
-            required: true,
-            email: true
-}
-    }
-});
-
-
-$('message-form').validate({
-    rules: {
-        message: {
-
+    $('email-form').validate({
+        rules: {
+            email: {
+                required: true,
+                email: true
+            }
         }
-    }
-});
+    });
 
-$('your-email').validate({
-    rules: {
-        name: {
-            required: true
-}
-}
-});
+    $('your-email').validate({
+        rules: {
+            name: {
+                required: true
+            }
+        }
+    });
+
+})
+
 
