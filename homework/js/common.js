@@ -8,21 +8,25 @@ $( "#toggle-button" ).on( "mouseleave", function() {
     $('.some-form').hidden;
 });
 
+
 $(document).ready(function () {
     $('.main-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        asNavFor: '.main-thumb-slider',
+        autoplaySpeed: 4000
     });
 
     $('.main-thumb-slider').slick({
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
+        centerPadding: '0px',
         asNavFor: '.main-slider',
         autoplaySpeed: 4000,
+        arrows: false,
         centerMode: true,
-        focusOnSelect: true,
+        focusOnSelect: true
     });
 
 
