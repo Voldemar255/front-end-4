@@ -89,12 +89,10 @@ body {
     /*position: relative;*/
 }
 
-.search {
-    /*margin-left: 32px;*/
-}
-
 .header-top {
-    background: #3c3c3c;
+    background-image: url("../images/Background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .header-slogan {
@@ -103,6 +101,42 @@ body {
     flex-direction: column;
 }
 
+/*.features h2::before,*/
+/*.some-info h2::before,*/
+/*.service h3::before,*/
+/*#amazing::before,*/
+/*.news h2::before,*/
+/*.header-work h2::before,*/
+/*.header-price p::before,*/
+/*.header-opinion h2::before,*/
+/*.header-team h2::before,*/
+/*.second-block h2::before {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: calc(50% - 76px);*/
+    /*border-top: 1px solid #18cfab;*/
+    /*width: 76px;*/
+    /*height: 3px;*/
+/*}*/
+
+/*.features h2::after,*/
+/*.some-info h2::after,*/
+/*.service h3::after,*/
+/*#amazing::after,*/
+/*.news h2::after,*/
+/*.header-work h2::after,*/
+/*.header-price p::after,*/
+/*.header-opinion h2::after,*/
+/*.header-team h2::after,*/
+/*.second-block h2::after {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: calc(50% - 62px);*/
+    /*border-bottom: 1px solid #18cfab;*/
+    /*width: 76px;*/
+/*}*/
 .header-slogan h3,
 .header-slogan h1 {
     color: #ffffff;
@@ -267,44 +301,6 @@ button.purchase:hover {
     margin-bottom: 44px;
     position: relative;
     text-align: center;
-}
-
-.features h2::before,
-.some-info h2::before,
-.service h3::before,
-#amazing::before,
-.news h2::before,
-.header-work h2::before,
-.header-price p::before,
-.header-opinion h2::before,
-.header-team h2::before,
-.second-block h2::before {
-    content: "";
-    background-color: #18cfab;
-    /*position: absolute;*/
-    bottom: 0;
-    left: 0;
-    width: 75px;
-    height: 1px;
-}
-
-.features h2::after,
-.some-info h2::after,
-.service h3::after,
-#amazing::after,
-.news h2::after,
-.header-work h2::after,
-.header-price p::after,
-.header-opinion h2::after,
-.header-team h2::after,
-.second-block h2::after
- {
-    content: "";
-    background-color: #18cfab;
-    /*position: absolute;*/
-    bottom: 0;
-    left: 0;
-    width: 75px;
 }
 
 .features h3 {
@@ -630,7 +626,11 @@ button.load {
 }
 
 .ready {
-    background: #40474b;
+    /*background: #40474b;*/
+    background-image: url("../images/fon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: .85;
 }
 .buy {
     display: flex;
@@ -1577,7 +1577,7 @@ button {
 }
 
 .third-column {
-    width: 250px;
+    width: 260px;
 }
 
 .first-column,
