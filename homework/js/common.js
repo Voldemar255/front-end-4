@@ -29,7 +29,10 @@ $(document).ready(function () {
         focusOnSelect: true
     });
 
-
+    $('.work-nav a').on('click', function (e) {
+        e.preventDefault();
+    })
+$('.sorting-container').mixItUp();
 });
 
 function initMap() {

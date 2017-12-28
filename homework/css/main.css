@@ -500,13 +500,27 @@ hr {
     padding-bottom: 24px;
     border: 1px solid #ebebeb;
 }
-
+.design {
+    margin-bottom: 75px;
+}
 .design a:hover,
 .design a:active {
     border-top: 2px solid #18cfab;
     color: #18cfab;
 }
-
+.sorting-container .mix {
+    display: none;
+}
+.sorting-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sorting-container div {
+    display: block;
+    width: 25%;
+}
 button.load {
     width: 165px;
     height: 60px;
