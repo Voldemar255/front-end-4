@@ -1,0 +1,30 @@
+{
+  "name": "gulp_project",
+  "version": "1.0.0",
+  "description": "first_gulp-project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Voldemar255@github.com/Voldemar255/front-end-4.git"
+  },
+  "author": "Vinnichuk_Volodymyr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Voldemar255/front-end-4/issues"
+  },
+  "homepage": "https://github.com/Voldemar255/front-end-4#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "browser-sync": "^2.21.0",
+    "clean": "^4.0.2",
+    "cssnano": "^3.10.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglifyjs": "^0.6.2"
+  }
+}

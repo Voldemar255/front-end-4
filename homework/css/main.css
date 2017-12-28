@@ -1553,7 +1553,7 @@ button {
     padding-bottom: 37px;
 }
 
-.icon p {
+.icon span {
     color: #fff;
     font-size: 40px;
     line-height: 9.53px;
@@ -1622,7 +1622,7 @@ button {
     text-transform: uppercase;
 }
 
-.second-column h3:active {
+.second-column h3:hover {
     color: #18cfab;
 }
 
@@ -1643,10 +1643,10 @@ button {
     color: #f1f1f1;
     line-height: 30px;
     margin-left: 80px;
+    text-decoration: none;
 }
 
 .second-column img {
-    border: 1px solid #00cbf6;
     display: inline-block;
     float: left;
     margin-right: 15px;
@@ -1720,8 +1720,6 @@ button {
 .four-column div {
     width: 75px;
     height: 75px;
-    background: #959595;
-    border: 1px solid #5d6467;
 }
 .four-column div+div {
     margin-bottom: 13px;
