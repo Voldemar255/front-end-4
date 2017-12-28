@@ -47,7 +47,7 @@ function initMap() {
 
 
 $(function () {
-    $('name-form').validate({
+    $('.name-form').validate({
         rules: {
             name: {
                 required: true,
