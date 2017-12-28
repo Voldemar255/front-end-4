@@ -1440,8 +1440,8 @@ border-radius: 100%;
 }
 
 .name-form input,
-.email-form input,
-.message-form input {
+.name-form textarea,
+.request button {
     width: 555px;
     background-color: transparent;
     vertical-align: middle;
@@ -1449,6 +1449,8 @@ border-radius: 100%;
     cursor: pointer;
     padding: 10px;
     border: 1px solid #d7e2e0;
+    margin-bottom: 13px;
+    outline: none;
 }
 
 .message-form input {

@@ -51,28 +51,14 @@ $(function () {
         rules: {
             name: {
                 required: true,
-                minlength: 1
-            }
-        }
-    });
-
-    $('email-form').validate({
-        rules: {
+                minength: 1
+            },
             email: {
                 required: true,
                 email: true
             }
         }
     });
-
-    $('your-email').validate({
-        rules: {
-            name: {
-                required: true
-            }
-        }
-    });
-
 })
 
 
